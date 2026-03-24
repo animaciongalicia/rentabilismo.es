@@ -77,24 +77,54 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${lora.variable}`}>
       <head>
-        {/* Schema.org – WebSite */}
+        {/* Schema.org – WebSite + Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: SITE_NAME,
-              url: SITE_URL,
-              description: SITE_DESCRIPTION,
-              inLanguage: "es",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": `${SITE_URL}/#website`,
+                  name: SITE_NAME,
+                  url: SITE_URL,
+                  description: SITE_DESCRIPTION,
+                  inLanguage: "es",
+                },
+                {
+                  "@type": "Organization",
+                  "@id": `${SITE_URL}/#organization`,
+                  name: SITE_NAME,
+                  url: SITE_URL,
+                  description: SITE_DESCRIPTION,
+                  inLanguage: "es",
+                  areaServed: {
+                    "@type": "AdministrativeArea",
+                    name: "España",
+                  },
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "A Coruña",
+                    addressRegion: "Galicia",
+                    addressCountry: "ES",
+                  },
+                },
+              ],
             }),
           }}
         />
       </head>
       <body className="flex min-h-screen flex-col antialiased">
+        {/* Skip-to-content — accesibilidad de teclado (WCAG 2.4.1) */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-r-green focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-r-white focus:no-underline"
+        >
+          Saltar al contenido principal
+        </a>
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import { SITE_URL, METODO_5P_LINKS } from "@/lib/siteConfig";
 
 const CURRENT_HREF = "/metodo-5p/promocion-publicidad";
@@ -22,8 +23,13 @@ export default function PromocionPublicidadPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-24 md:py-32">
+      <section className="bg-r-dark py-20 sm:py-24 md:py-32">
         <div className="container-site">
+          <Breadcrumb items={[
+            { label: "Inicio", href: "/" },
+            { label: "Método 5P", href: "/metodo-5p" },
+            { label: "Promoción / Publicidad" },
+          ]} />
           <p className="label-tag mb-4 text-r-warm/50">Palanca 05 del Método 5P</p>
           <h1 className="font-display text-display-xl text-r-white">
             Promoción / Publicidad
@@ -249,18 +255,25 @@ export default function PromocionPublicidadPage() {
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
         <div className="container-site">
-          <p className="label-tag mb-4 text-r-warm/50">Otras palancas del sistema</p>
-          <div className="grid gap-px border border-r-border-d bg-r-border-d sm:grid-cols-4">
-            {METODO_5P_LINKS.filter((l) => l.href !== CURRENT_HREF).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="group flex flex-col gap-1 bg-r-dark px-5 py-4 no-underline hover:bg-r-green"
-              >
-                <span className="text-xs font-semibold tracking-widest text-r-warm/35">{link.num}</span>
-                <span className="font-body font-semibold text-r-white">{link.label}</span>
-              </Link>
-            ))}
+          <p className="label-tag mb-4 text-r-warm/50">Las cinco palancas del sistema</p>
+          <div className="grid grid-cols-2 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
+            {METODO_5P_LINKS.map((link) => {
+              const isCurrent = link.href === CURRENT_HREF;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={[
+                    "flex flex-col gap-1 px-5 py-4 no-underline transition-colors",
+                    isCurrent ? "bg-r-green" : "bg-r-dark hover:bg-r-green",
+                  ].join(" ")}
+                  aria-current={isCurrent ? "page" : undefined}
+                >
+                  <span className="text-xs font-semibold tracking-widest text-r-warm/50">{link.num}</span>
+                  <span className="font-body font-semibold text-r-white">{link.label}</span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

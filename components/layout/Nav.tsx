@@ -35,6 +35,7 @@ export default function Nav() {
                       ? "text-r-green"
                       : "text-r-muted hover:text-r-dark",
                   ].join(" ")}
+                  aria-current={pathname === link.href ? "page" : undefined}
                 >
                   {link.label}
                 </Link>
@@ -85,6 +86,7 @@ export default function Nav() {
                       ? "text-r-green"
                       : "text-r-dark hover:text-r-green",
                   ].join(" ")}
+                  aria-current={pathname === link.href ? "page" : undefined}
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

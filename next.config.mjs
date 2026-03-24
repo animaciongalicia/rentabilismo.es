@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Preparado para i18n si se necesita en el futuro
-  // Imágenes optimizadas si se añaden dominios externos
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          { key: "X-Content-Type-Options",  value: "nosniff" },
+          { key: "X-Frame-Options",          value: "DENY" },
+          { key: "X-XSS-Protection",         value: "1; mode=block" },
+          { key: "Referrer-Policy",          value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy",       value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
