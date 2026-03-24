@@ -26,12 +26,12 @@ export default function AvisoLegalPage() {
               continuación los datos identificativos del titular de este sitio web:
             </p>
             <ul className="mt-4 space-y-1 text-sm">
-              <li><strong>Titular:</strong> [A COMPLETAR: razón social o nombre del titular]</li>
-              <li><strong>NIF/CIF:</strong> [A COMPLETAR]</li>
-              <li><strong>Domicilio social:</strong> [A COMPLETAR: dirección postal completa]</li>
-              <li><strong>Email:</strong> [A COMPLETAR]</li>
+              <li><strong>Titular:</strong> Inversiones SHISHO SL</li>
+              <li><strong>NIF/CIF:</strong> B70319223</li>
+              <li><strong>Domicilio social:</strong> Ronda de Montealto, 4 — 15002 A Coruña</li>
+              <li><strong>Email:</strong> info@rentabilismo.es</li>
               <li><strong>Sitio web:</strong> https://rentabilismo.es</li>
-              <li><strong>Inscripción registral:</strong> [A COMPLETAR: datos del Registro Mercantil si aplica]</li>
+              <li><strong>Inscripción registral:</strong> Registro Mercantil de A Coruña</li>
             </ul>
           </div>
 

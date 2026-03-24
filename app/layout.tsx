@@ -99,12 +99,17 @@ export default function RootLayout({
                   url: SITE_URL,
                   description: SITE_DESCRIPTION,
                   inLanguage: "es",
+                  legalName: "Inversiones SHISHO SL",
+                  taxID: "B70319223",
+                  email: "info@rentabilismo.es",
                   areaServed: {
                     "@type": "AdministrativeArea",
                     name: "España",
                   },
                   address: {
                     "@type": "PostalAddress",
+                    streetAddress: "Ronda de Montealto, 4",
+                    postalCode: "15002",
                     addressLocality: "A Coruña",
                     addressRegion: "Galicia",
                     addressCountry: "ES",

@@ -27,10 +27,10 @@ export default function PrivacidadPage() {
               a través de este sitio web es:
             </p>
             <ul className="mt-4 space-y-1 text-sm">
-              <li><strong>Titular:</strong> [A COMPLETAR: razón social o nombre del titular]</li>
-              <li><strong>NIF/CIF:</strong> [A COMPLETAR]</li>
-              <li><strong>Domicilio:</strong> [A COMPLETAR: dirección postal completa]</li>
-              <li><strong>Email de contacto:</strong> [A COMPLETAR]</li>
+              <li><strong>Titular:</strong> Inversiones SHISHO SL</li>
+              <li><strong>NIF/CIF:</strong> B70319223</li>
+              <li><strong>Domicilio:</strong> Ronda de Montealto, 4 — 15002 A Coruña</li>
+              <li><strong>Email de contacto:</strong> info@rentabilismo.es</li>
               <li><strong>Sitio web:</strong> https://rentabilismo.es</li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ export default function PrivacidadPage() {
             </ul>
             <p className="mt-4">
               Para ejercer cualquiera de estos derechos, puede dirigirse al responsable del
-              tratamiento a través de: [A COMPLETAR: email de contacto]
+              tratamiento a través de: info@rentabilismo.es
             </p>
             <p className="mt-4">
               Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española
