@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────
+   Variables CSS
+───────────────────────────────────────── */
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-lora:  "Lora", Georgia, serif;
+}
+
+/* ─────────────────────────────────────────
+   Base reset & tipografía
+───────────────────────────────────────── */
+@layer base {
+  html {
+    @apply scroll-smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-r-cream text-r-dark font-body;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3 {
+    @apply font-display font-semibold leading-tight text-r-dark;
+  }
+
+  h4, h5, h6 {
+    @apply font-body font-semibold text-r-dark;
+  }
+
+  p {
+    @apply text-[1.0625rem] leading-relaxed;
+  }
+
+  a {
+    @apply text-r-green underline-offset-4 transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-r-green-2;
+  }
+
+  ::selection {
+    @apply bg-r-green text-r-white;
+  }
+}
+
+/* ─────────────────────────────────────────
+   Utilidades de componente
+───────────────────────────────────────── */
+@layer components {
+
+  /* Contenedor principal */
+  .container-site {
+    @apply mx-auto w-full max-w-wide px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Contenedor de prosa (lectura cómoda) */
+  .container-prose {
+    @apply mx-auto w-full max-w-prose px-5 sm:px-8;
+  }
+
+  /* Sección estándar */
+  .section {
+    @apply py-section;
+  }
+
+  .section-sm {
+    @apply py-section-sm;
+  }
+
+  /* Línea divisoria sutil */
+  .divider {
+    @apply border-t border-r-border;
+  }
+
+  /* Tag / etiqueta pequeña */
+  .label-tag {
+    @apply inline-block font-body text-xs font-semibold uppercase tracking-widest text-r-muted;
+  }
+
+  /* Card base */
+  .card {
+    @apply rounded-none border border-r-border bg-r-white p-6 md:p-8;
+  }
+
+  /* Card con acento verde */
+  .card-accent {
+    @apply card border-l-4 border-l-r-green;
+  }
+}
