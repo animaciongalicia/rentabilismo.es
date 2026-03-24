@@ -5,67 +5,87 @@ import { SITE_URL } from "@/lib/siteConfig";
 export const metadata: Metadata = {
   title: "Diccionario Rentabilista — El vocabulario del sistema",
   description:
-    "El glosario de Rentabilismo. Términos precisos para pensar con claridad sobre negocios, rentabilidad y método. Cliente rentable, precio rentable, proceso rentable y más.",
+    "Términos precisos para pensar con claridad sobre tu negocio. Cliente rentable, precio rentable, proceso rentable, margen rentable, decisión rentable. El glosario de Rentabilismo.",
   alternates: { canonical: `${SITE_URL}/diccionario` },
   openGraph: {
-    title: "Diccionario Rentabilista",
+    title: "Diccionario Rentabilista — El vocabulario del sistema",
     description:
-      "Términos precisos para pensar con claridad. El vocabulario propio del sistema Rentabilismo.",
+      "Para pensar con claridad hay que hablar con precisión. El glosario completo de Rentabilismo.",
     url: `${SITE_URL}/diccionario`,
   },
 };
 
-// ─── Entradas del diccionario ─────────────────────────────────────────────────
-// Cada entrada puede tener: term, shortDef, definition, example, relatedTerms
 const ENTRADAS = [
   {
     term: "Cliente rentable",
     shortDef: "sustantivo",
     definition:
-      "Cliente cuya relación genera un margen positivo real, considerando no solo el precio de venta sino también el tiempo de atención, el coste de adquisición, la frecuencia de compra y la complejidad de la relación. Un cliente que paga bien pero requiere el triple de atención puede no ser rentable. El cliente rentable vuelve, refiere y no consume recursos desproporcionados.",
+      "Cliente cuya relación genera un margen positivo real, una vez considerados el precio de venta, el coste de adquisición, el tiempo de atención, la frecuencia de compra y la complejidad de la relación. Un cliente que paga bien pero exige el triple de recursos que el resto puede no ser rentable. El cliente rentable no es el que más factura: es el que más margen neto genera con menos coste operativo.",
+    error:
+      "Medir la rentabilidad de un cliente solo por lo que paga, sin contar el tiempo que consume, los errores que genera o el coste de mantenerlo. Muchos negocios tienen clientes «importantes» por volumen que en realidad son una carga.",
     example:
-      "«Teníamos veinte clientes. Cuando analizamos cuáles eran rentables de verdad, resultaron ser seis. Sobre esos seis construimos el modelo real.»",
-    relatedTerms: ["Margen rentable", "Precio rentable"],
+      "Una empresa de servicios tenía a su cliente más grande dedicándole el 40% del tiempo del equipo pero generando el 18% del margen total. Cuando lo calcularon bien, resultó ser el menos rentable de la cartera.",
+    relatedTerms: ["Margen rentable", "Precio rentable", "Decisión rentable"],
   },
   {
     term: "Precio rentable",
     shortDef: "sustantivo",
     definition:
-      "Precio que cubre todos los costes directos e indirectos de un producto o servicio y genera el margen necesario para que el negocio sea sostenible. No es el precio más alto posible ni el más competitivo del mercado: es el precio correcto para el valor que se entrega y el cliente al que se sirve. Un precio rentable requiere conocer el coste real antes de fijar el número.",
+      "Precio que cubre la totalidad de los costes reales de entrega (directos e indirectos) y genera el margen necesario para que el negocio sea sostenible. No es el precio más alto posible ni el más competitivo del mercado: es el precio correcto para el valor entregado y el cliente al que se sirve. Un precio rentable requiere conocer el coste total antes de fijar el número, incluyendo tiempo, overhead, errores y coste de adquisición del cliente.",
+    error:
+      "Fijar el precio mirando a la competencia o usando el instinto, sin calcular primero lo que cuesta realmente entregar el producto o servicio. El resultado habitual: un precio que parece razonable pero que no genera el margen que el negocio necesita.",
     example:
-      "«Cuando calculamos el precio rentable del servicio, resultó ser un 40% más alto de lo que estábamos cobrando. Lo subimos. No perdimos el cliente que importaba.»",
+      "Un consultor cobraba 800 euros por proyecto. Al calcular las horas reales invertidas (incluyendo reuniones, correcciones y seguimiento), el precio por hora efectiva era inferior al de un empleado junior. El precio rentable estaba en 1.400 euros.",
     relatedTerms: ["Margen rentable", "Cliente rentable"],
   },
   {
     term: "Proceso rentable",
     shortDef: "sustantivo",
     definition:
-      "Proceso que genera más valor del que consume. Un proceso rentable es documentado, delegable y mejorable. Elimina la dependencia de personas concretas, reduce el margen de error y permite escalar sin escalar el caos. Un proceso que no puede ejecutarse sin la supervisión directa del dueño no es rentable: es un cuello de botella disfrazado de método.",
+      "Proceso que genera más valor del que consume en términos de tiempo, dinero y energía. Un proceso rentable es documentado (cualquier persona puede entenderlo), delegable (cualquier persona competente puede ejecutarlo), y mejorable (tiene métricas que permiten saber si funciona bien). Un proceso que no puede ejecutarse sin supervisión directa del dueño no es un proceso rentable: es un cuello de botella con nombre.",
+    error:
+      "Creer que documentar procesos es burocracia o pérdida de tiempo. La falta de procesos claros es una de las principales razones por las que el dueño no puede delegar, el negocio no puede crecer y los errores se repiten.",
     example:
-      "«Documentamos el proceso de onboarding de clientes. Pasó de tardar tres horas del dueño a tardar cuarenta y cinco minutos de un junior.»",
-    relatedTerms: ["Decisión rentable", "Personas"],
+      "Una agencia de comunicación documentó su proceso de alta de clientes nuevos. Lo que tardaba tres horas del fundador pasó a tardar cuarenta y cinco minutos de un coordinador júnior, con menos errores y mejor experiencia del cliente.",
+    relatedTerms: ["Decisión rentable", "Cliente rentable"],
   },
   {
     term: "Margen rentable",
     shortDef: "sustantivo",
     definition:
-      "Diferencia entre el precio de venta y el coste real total de un producto o servicio, expresada como porcentaje sobre el precio de venta. El margen rentable es el margen suficiente para pagar todos los costes del negocio, compensar el riesgo del empresario y generar capacidad de inversión. No hay un número universal: depende del tipo de negocio, el sector y la estructura de costes.",
+      "Diferencia entre el precio de venta y el coste total real (directos e indirectos) de un producto o servicio, expresada como porcentaje. El margen rentable no es solo el margen bruto: es el margen que queda después de todos los costes, incluyendo los que se suelen ignorar (tiempo del dueño, costes de error, coste de adquisición, overhead). No hay un porcentaje universal: depende del modelo de negocio, el sector y la estructura de costes específica.",
+    error:
+      "Confundir margen bruto con margen real. Un negocio puede tener un margen bruto del 60% y un margen neto del 5% si los costes indirectos son altos. Mirar solo el bruto es ver la mitad de la película.",
     example:
-      "«Nuestro margen bruto era del 60%, pero el margen neto real, contando todos los costes, era del 8%. Ahí estaba el problema.»",
+      "Una tienda online tenía un margen bruto del 45% por producto. Cuando se añadieron los costes de devoluciones (12%), logística (8%), atención al cliente (6%) y publicidad (9%), el margen neto real era del 10%. Cambiaron el mix de producto para elevar ese número.",
     relatedTerms: ["Precio rentable", "Cliente rentable", "Decisión rentable"],
   },
   {
     term: "Decisión rentable",
     shortDef: "sustantivo",
     definition:
-      "Decisión tomada con criterio, datos suficientes y orientada a mejorar la rentabilidad del negocio. No todas las decisiones rentables son obvias en el momento. Pero todas tienen en común que se toman con información real (no intuición ciega), dentro del sistema de las 5P y con visión de medio plazo. Una decisión que genera ingresos inmediatos pero destruye margen o equipo no es una decisión rentable.",
+      "Decisión tomada con criterio y datos suficientes, orientada a mejorar la rentabilidad del negocio a medio plazo. Una decisión rentable no siempre genera más ingresos inmediatos; a veces genera menos. Lo que la distingue es que mejora la estructura del negocio: el margen, la eficiencia, la selección de clientes o la capacidad operativa. Una decisión que genera ingresos rápidos pero destruye margen, equipo o reputación no es una decisión rentable.",
+    error:
+      "Tomar decisiones por urgencia o por miedo en lugar de por criterio. La urgencia y el miedo empujan hacia la opción más cómoda a corto plazo, que raramente es la más rentable a medio plazo.",
     example:
-      "«Decidimos rechazar un proyecto grande que nos habría ocupado toda la capacidad a bajo margen. Fue una decisión rentable, aunque en ese momento dolia.»",
-    relatedTerms: ["Proceso rentable", "Margen rentable"],
+      "Una empresa de catering rechazó un evento grande que les habría ocupado toda su capacidad durante tres semanas a un precio inferior a su mínimo rentable. El mes siguiente consiguieron tres eventos más pequeños con mejor margen total. Fue una decisión rentable aunque en el momento daba vértigo.",
+    relatedTerms: ["Margen rentable", "Proceso rentable", "Cliente rentable"],
   },
 ];
 
-// ─── Índice de términos ───────────────────────────────────────────────────────
+const PROXIMAS_ENTRADAS = [
+  "Negocio rentable",
+  "Equipo mínimo viable",
+  "Propuesta de valor real",
+  "Cuello de botella",
+  "Retención vs adquisición",
+  "Coste de oportunidad",
+  "Escalabilidad real",
+  "Indicador de rentabilidad",
+  "Modelo de negocio sostenible",
+  "Ticket medio rentable",
+];
+
 const INDICE = ENTRADAS.map((e) => ({
   label: e.term,
   anchor: e.term.toLowerCase().replace(/\s+/g, "-"),
@@ -82,9 +102,8 @@ export default function DiccionarioPage() {
             Diccionario<br />Rentabilista
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/75">
-            Para pensar con claridad primero hay que hablar con precisión.
-            Este diccionario define los términos propios del sistema
-            Rentabilismo.
+            Para pensar con claridad hay que hablar con precisión. Cuando los
+            conceptos son vagos, las decisiones también lo son.
           </p>
         </div>
       </section>
@@ -92,17 +111,24 @@ export default function DiccionarioPage() {
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
       <section className="section-sm bg-r-white">
         <div className="container-prose">
-          <p className="text-r-dark/80">
-            El lenguaje impreciso genera pensamiento impreciso. Cuando no
-            sabemos con exactitud qué significa «rentable», «eficiente» o
-            «cliente ideal», tomamos decisiones sobre conceptos vagos. Este
-            diccionario define los términos que usa Rentabilismo para que el
-            diagnóstico y la acción sean lo más precisos posible.
-          </p>
-          <p className="mt-4 text-sm text-r-muted">
-            El diccionario crece de forma continua. Las entradas actuales son
-            la base del vocabulario esencial del sistema.
-          </p>
+          <p className="label-tag mb-3">Por qué existe este diccionario</p>
+          <div className="space-y-4 text-r-dark/85">
+            <p>
+              El lenguaje impreciso genera pensamiento impreciso. En los
+              negocios, usar términos vagos lleva a tomar decisiones sobre
+              conceptos que cada persona entiende de forma distinta.
+            </p>
+            <p>
+              ¿Qué significa exactamente que un cliente sea «bueno»? ¿Que
+              un precio sea «competitivo»? ¿Que un negocio «funcione»?
+              Sin definiciones claras, esas palabras no dicen nada.
+            </p>
+            <p>
+              Este diccionario define los términos que usa Rentabilismo
+              con la precisión necesaria para que el diagnóstico y la
+              acción sean lo más concretos posible.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -113,8 +139,8 @@ export default function DiccionarioPage() {
 
             {/* Índice lateral */}
             <aside className="md:sticky md:top-24 md:h-fit">
-              <p className="label-tag mb-4">Índice</p>
-              <nav>
+              <p className="label-tag mb-4">Términos actuales</p>
+              <nav aria-label="Índice del diccionario">
                 <ul className="space-y-1.5" role="list">
                   {INDICE.map((item) => (
                     <li key={item.anchor}>
@@ -126,42 +152,35 @@ export default function DiccionarioPage() {
                       </a>
                     </li>
                   ))}
-                  <li className="pt-4">
-                    <span className="text-xs text-r-muted/50">
-                      + más términos próximamente
-                    </span>
-                  </li>
                 </ul>
               </nav>
 
-              {/* Placeholder búsqueda futura */}
-              <div className="mt-8 border border-dashed border-r-border p-4">
-                <p className="text-xs text-r-muted/60">
-                  ↳ Próximamente: buscador de términos
-                </p>
+              <div className="mt-8 border-t border-r-border pt-6">
+                <p className="label-tag mb-3 text-r-muted/50">Próximamente</p>
+                <div className="space-y-1.5">
+                  {PROXIMAS_ENTRADAS.slice(0, 5).map((t) => (
+                    <p key={t} className="text-xs text-r-muted/50">{t}</p>
+                  ))}
+                  <p className="text-xs text-r-muted/40">+ más en desarrollo</p>
+                </div>
               </div>
             </aside>
 
             {/* Entradas */}
-            <div className="space-y-12">
+            <div className="space-y-14">
               {ENTRADAS.map((entrada) => (
                 <DictionaryCard key={entrada.term} {...entrada} />
               ))}
 
-              {/* Placeholder próximas entradas */}
+              {/* Próximas entradas visual */}
               <div className="border-t border-r-border pt-10">
-                <p className="label-tag mb-3">Próximas entradas</p>
+                <p className="label-tag mb-4">Próximas entradas</p>
+                <p className="mb-5 text-sm text-r-muted">
+                  El diccionario crece de forma continua. Cada nuevo término
+                  es una definición operativa, no un glosario académico.
+                </p>
                 <div className="flex flex-wrap gap-2">
-                  {[
-                    "Negocio rentable",
-                    "Equipo mínimo viable",
-                    "Propuesta de valor",
-                    "Cuello de botella",
-                    "Retención vs adquisición",
-                    "Escalabilidad real",
-                    "Indicador clave",
-                    "Modelo de negocio",
-                  ].map((term) => (
+                  {PROXIMAS_ENTRADAS.map((term) => (
                     <span
                       key={term}
                       className="border border-r-border/60 px-3 py-1 text-xs text-r-muted/60"

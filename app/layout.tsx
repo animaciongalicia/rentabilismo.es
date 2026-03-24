@@ -36,6 +36,12 @@ export const metadata: Metadata = {
     "mejora de negocio",
     "gestión empresarial",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/icon.svg",
+  },
   authors: [{ name: "Rentabilismo" }],
   creator: "Rentabilismo",
   openGraph: {

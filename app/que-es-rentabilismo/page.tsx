@@ -1,239 +1,226 @@
 import type { Metadata } from "next";
 import Button from "@/components/ui/Button";
-import SectionHeader from "@/components/ui/SectionHeader";
 import { SITE_URL } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Qué es Rentabilismo — Definición, origen y propósito",
+  title: "Qué es Rentabilismo — Definición honesta, sin rodeos",
   description:
-    "Rentabilismo es el sistema práctico para construir negocios más rentables. Conoce su definición completa, su origen, a quién sirve y qué cambia cuando se aplica.",
+    "Rentabilismo no es un curso, no es coaching y no es consultoría de imagen. Es un sistema concreto para mejorar la rentabilidad real de tu negocio. Aquí está la definición completa.",
   alternates: { canonical: `${SITE_URL}/que-es-rentabilismo` },
   openGraph: {
-    title: "Qué es Rentabilismo — Definición, origen y propósito",
+    title: "Qué es Rentabilismo — Definición honesta, sin rodeos",
     description:
-      "El marco mental y el método para construir negocios realmente rentables. Sin teoría vacía, sin promesas infundadas.",
+      "Qué es, qué no es, por qué nace y qué problema resuelve. La definición completa del sistema.",
     url: `${SITE_URL}/que-es-rentabilismo`,
   },
 };
 
-// ─── Diferencias ─────────────────────────────────────────────────────────────
 const DIFERENCIAS = [
   {
-    vs: "Coaching motivacional",
-    rentabilismo:
-      "No te ayuda a sentirte mejor, te ayuda a operar mejor. Los resultados son la medida, no las sensaciones.",
+    vs: "El curso online",
+    problema: "Enseña conceptos desconectados de tu negocio concreto. Terminas con más información y las mismas dudas.",
+    rentabilismo: "Parte de tu situación real. El diagnóstico va primero, la acción después.",
   },
   {
-    vs: "Formación online genérica",
-    rentabilismo:
-      "No hay contenido universal. El sistema se aplica a tu negocio concreto, con tus números y tus problemas.",
+    vs: "El coaching de negocios",
+    problema: "Trabaja la mentalidad pero evita meterse en los números. Cuando salen los márgenes, se vuelve difuso.",
+    rentabilismo: "Mide, diagnostica y actúa sobre lo concreto. La mentalidad es consecuencia de tener claridad, no al revés.",
   },
   {
-    vs: "Consultoría clásica",
-    rentabilismo:
-      "No hay informes de 80 páginas que nadie implementa. Hay diagnóstico, método y acción concreta.",
+    vs: "La consultoría tradicional",
+    problema: "Un informe de ochenta páginas que nadie implementa. El consultor se va. El problema se queda.",
+    rentabilismo: "El sistema lo aplicas tú. La consultoría (cuando existe) acompaña la implementación, no la sustituye.",
   },
   {
-    vs: "Marketing de gurú",
-    rentabilismo:
-      "No hay promesas de éxito rápido, fórmulas mágicas ni mensajes aspiracionales vacíos.",
+    vs: "El gurú de redes sociales",
+    problema: "Promete resultados que dependen de un mercado ideal que no existe en tu negocio.",
+    rentabilismo: "No hay promesas de resultados. Hay un método que mejora las probabilidades de que las cosas funcionen.",
   },
 ];
 
-// ─── Qué cambia ───────────────────────────────────────────────────────────────
 const QUE_CAMBIA = [
-  "Sabes cuáles son tus clientes más rentables y por qué.",
-  "Tienes un precio que refleja valor real y genera margen real.",
-  "Tus procesos funcionan sin que estés encima de todo.",
-  "Tu equipo sabe qué hacer y por qué lo hace.",
-  "Tu promoción comunica lo que realmente importa.",
-  "Tomas decisiones con criterio, no con intuición ciega.",
+  "Sabes cuáles son tus clientes más rentables y puedes tomar decisiones sobre eso.",
+  "Tienes un precio que cubre tus costes reales y genera el margen que necesitas.",
+  "Tus procesos funcionan sin que tengas que estar encima de todo.",
+  "Tu equipo sabe qué hacer, por qué lo hace y cómo medirlo.",
+  "Tu promoción comunica lo que realmente importa a quien realmente importa.",
+  "Tomas decisiones con criterio y datos, no con urgencia e intuición.",
 ];
 
 export default function QueEsRentabilismoPage() {
   return (
     <>
-      {/* ── HERO / DEFINICIÓN ─────────────────────────────────────────────── */}
+      {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 md:py-28">
         <div className="container-site">
-          <p className="label-tag mb-4 text-r-warm/50">Página pilar</p>
+          <p className="label-tag mb-4 text-r-warm/50">Definición</p>
           <h1 className="font-display text-display-xl text-r-white">
             Qué es Rentabilismo
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/80">
-            No es un movimiento. No es una academia. No es otro curso.
-            Es un sistema práctico para construir negocios que generan
-            rentabilidad real, sostenida y con sentido.
+            No es un gurú, no es una academia y no es otro curso más.
+            Es un sistema para pensar los negocios de forma más clara,
+            más ordenada y más rentable.
           </p>
         </div>
       </section>
 
-      {/* ── DEFINICIÓN COMPLETA ───────────────────────────────────────────── */}
+      {/* ── DEFINICIÓN DIRECTA ────────────────────────────────────────────── */}
       <section className="section bg-r-white">
         <div className="container-prose">
-          <p className="label-tag mb-4">La definición</p>
+          <p className="label-tag mb-4">La definición sin adornos</p>
           <h2 className="font-display text-display-md text-r-dark">
-            Rentabilismo, definido con precisión
+            Qué es Rentabilismo, exactamente
           </h2>
-          <div className="divider mt-6 pt-8 space-y-5 text-r-dark/85">
+          <div className="mt-6 space-y-5 text-r-dark/85">
             <p className="text-lg font-medium text-r-dark">
-              <strong>Rentabilismo</strong> es el sistema práctico que combina
-              mentalidad estratégica, método estructurado y acción continua para
-              construir negocios más rentables de forma sostenible.
+              Rentabilismo es un sistema para mejorar la rentabilidad real de
+              un negocio. Combina diagnóstico, método y acción en cinco áreas
+              clave: Personas, Producto/Servicio, Precios, Procesos y
+              Promoción/Publicidad.
             </p>
             <p>
-              Es un marco mental que cambia la forma en que un empresario
-              o emprendedor entiende su negocio: qué medir, qué decidir, qué
-              priorizar y cómo ejecutar.
+              No va de facturar más. Va de generar más margen con lo que ya
+              tienes, eliminar lo que te cuesta sin retorno y construir una
+              estructura que funcione mejor con menos intervención tuya.
             </p>
             <p>
-              El eje central es el <strong>Método 5P</strong>: cinco palancas
-              —Personas, Producto/Servicio, Precio, Procesos y Promoción— que
-              interactúan entre sí y que, cuando se alinean correctamente,
-              producen mejoras de rentabilidad reales y medibles.
+              El eje central es el <strong>Método 5P</strong>: un marco que
+              permite diagnosticar en qué área está el cuello de botella
+              principal y actuar sobre él con criterio y prioridad. Sin
+              intentar arreglar todo a la vez. Sin teoría desconectada.
             </p>
             <p>
-              No se trata de optimizar una sola área. Se trata de entender el
-              negocio como un sistema, identificar dónde están los cuellos de
-              botella y actuar con criterio, en orden y de forma continua.
+              Lo que no hace Rentabilismo: no te promete que vas a ganar el
+              doble en tres meses, no te da un plan genérico que sirva para
+              cualquier negocio y no pretende que el problema sea solo de
+              actitud.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── ORIGEN ───────────────────────────────────────────────────────────── */}
+      {/* ── POR QUÉ NACE ──────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
         <div className="container-prose">
           <p className="label-tag mb-4">El origen</p>
           <h2 className="font-display text-display-md text-r-dark">
-            Por qué existe este sistema
+            Por qué nace este sistema
           </h2>
           <div className="mt-6 space-y-5 text-r-dark/85">
             <p>
-              Rentabilismo nace de una observación repetida durante años de
-              trabajo con negocios reales: la mayoría de los empresarios
-              trabajan bien y trabajan duro, pero operan sin sistema.
+              La mayoría de los recursos para empresarios hispanohablantes
+              tienen un problema de aplicabilidad. O son demasiado teóricos
+              para implementarse en un negocio real con recursos limitados,
+              o están diseñados para grandes empresas con equipos especializados,
+              o prometen mucho y explican poco.
             </p>
             <p>
-              Toman decisiones basadas en intuición o en urgencia. No tienen
-              un modelo claro de qué genera margen y qué lo consume. No saben
-              con precisión cuáles son sus palancas de mejora.
+              El empresario que tiene entre dos y veinte personas, que lleva
+              el negocio con sus manos y que no tiene tiempo para teoría,
+              necesita otro tipo de ayuda. Necesita un sistema que pueda
+              entender, que pueda diagnosticar por sí mismo y que le diga
+              por dónde empezar.
             </p>
             <p>
-              El mercado de la formación y la consultoría no lo resuelve
-              bien: o vende demasiado teórico, o demasiado aspiracional,
-              o demasiado específico para grandes empresas.
-            </p>
-            <p>
-              Rentabilismo cubre ese espacio vacío: un sistema práctico,
-              en español, para empresarios y emprendedores de verdad.
+              Rentabilismo nace de trabajar con negocios reales, de ver qué
+              falla y qué funciona y de sistematizar ese aprendizaje en algo
+              que otros puedan usar. No es un sistema inventado en una
+              academia. Es el resultado de ver los mismos errores repetirse
+              en negocios distintos y construir el marco para evitarlos.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── PROPÓSITO ─────────────────────────────────────────────────────── */}
+      {/* ── QUÉ PROBLEMA RESUELVE ─────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-prose">
-          <p className="label-tag mb-4">El propósito</p>
+          <p className="label-tag mb-4">El problema que resuelve</p>
           <h2 className="font-display text-display-md text-r-dark">
-            Para qué sirve Rentabilismo
+            Por qué tantos negocios trabajan mucho y mejoran poco
           </h2>
           <div className="mt-6 space-y-5 text-r-dark/85">
             <p>
-              El propósito de Rentabilismo es simple: que quien lo aplique
-              construya un negocio más rentable. No más grande, no más famoso,
-              no más «escalable en teoría». Más rentable.
+              No es un problema de esfuerzo. Es un problema de sistema.
             </p>
             <p>
-              Un negocio rentable genera margen suficiente para pagar bien,
-              invertir en lo importante, tomar decisiones sin presión constante
-              y funcionar con cierta independencia del dueño.
+              La mayoría de los negocios empiezan respondiendo a la demanda:
+              alguien compra, tú produces, crece la facturación. En esa fase
+              no necesitas mucho orden porque el crecimiento cubre los errores.
             </p>
             <p>
-              Eso no es el punto de llegada de un negocio. Es la base desde
-              la que se construye todo lo demás.
+              Pero llega un punto en que ese modelo deja de funcionar. Los
+              costes crecen, el margen se estrecha, el dueño no puede delegar
+              porque no hay sistemas claros, y cada cliente o proyecto nuevo
+              añade trabajo pero no mejora la rentabilidad.
+            </p>
+            <p>
+              El error típico es intentar resolver esto con más ventas.
+              Más clientes, más canales, más marketing. Pero si el problema
+              es de estructura, más volumen solo amplifica el problema.
+            </p>
+            <p>
+              Rentabilismo resuelve el problema desde el origen: diagnostica
+              qué área está limitando la rentabilidad, prioriza, actúa y mide.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── DIFERENCIAS ────────────────────────────────────────────────────── */}
+      {/* ── NO VA DE HACER MÁS ────────────────────────────────────────────── */}
       <section className="section bg-r-white">
+        <div className="container-prose">
+          <p className="label-tag mb-4">El enfoque</p>
+          <h2 className="font-display text-display-md text-r-dark">
+            No va de hacer más. Va de pensar mejor.
+          </h2>
+          <div className="mt-6 space-y-5 text-r-dark/85">
+            <p>
+              La trampa del empresario moderno es creer que el problema es
+              de volumen: más ventas, más clientes, más contenido, más canales,
+              más herramientas.
+            </p>
+            <p>
+              En la mayoría de los casos, el problema no es de escasez. Es de
+              ineficiencia: márgenes mal calculados, clientes que no son
+              rentables, procesos que consumen más recursos de los que generan,
+              precios que no cubren los costes reales.
+            </p>
+            <p>
+              Hacer más sobre una base deficiente solo amplía el problema.
+              Primero claridad, luego orden, luego acción. En ese orden.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LAS DIFERENCIAS ────────────────────────────────────────────────── */}
+      <section className="section bg-r-warm">
         <div className="container-site">
-          <SectionHeader
-            tag="Las diferencias"
-            title="Rentabilismo vs el resto"
-            subtitle="Muchas cosas prometen mejorar tu negocio. Esto es lo que diferencia a Rentabilismo de las alternativas más comunes."
-          />
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <p className="label-tag mb-4">Las diferencias</p>
+          <h2 className="font-display text-display-md text-r-dark">
+            Rentabilismo frente a lo que ya conoces
+          </h2>
+          <p className="mt-4 max-w-xl leading-relaxed text-r-muted">
+            No falta oferta de formación y consultoría. Lo que falta es que
+            sirva de verdad. Esto es lo que diferencia a Rentabilismo de las
+            opciones más habituales.
+          </p>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {DIFERENCIAS.map((item) => (
-              <div key={item.vs} className="card">
-                <p className="label-tag mb-3 text-r-muted/60">Vs. {item.vs}</p>
-                <p className="text-[1.0625rem] leading-relaxed text-r-dark/85">
-                  {item.rentabilismo}
-                </p>
+              <div key={item.vs} className="card flex flex-col gap-4">
+                <div>
+                  <p className="label-tag text-r-muted/50">El problema con</p>
+                  <p className="mt-1 font-semibold text-r-dark">{item.vs}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-r-muted">{item.problema}</p>
+                </div>
+                <div className="border-t border-r-border pt-4">
+                  <p className="label-tag text-r-green">Rentabilismo</p>
+                  <p className="mt-1 text-sm leading-relaxed text-r-dark/85">{item.rentabilismo}</p>
+                </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── POR QUÉ IMPORTA HOY ───────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
-        <div className="container-prose">
-          <p className="label-tag mb-4">El momento</p>
-          <h2 className="font-display text-display-md text-r-dark">
-            Por qué importa ahora
-          </h2>
-          <div className="mt-6 space-y-5 text-r-dark/85">
-            <p>
-              Los costes suben. Los márgenes se estrechan. La competencia no
-              desaparece. Y el ruido —cursos, herramientas, tendencias,
-              estrategias del momento— no para de crecer.
-            </p>
-            <p>
-              En ese contexto, la capacidad de operar con claridad, orden y
-              criterio es una ventaja competitiva real. No en teoría. En práctica.
-            </p>
-            <p>
-              Rentabilismo es la respuesta a ese entorno: un sistema que ayuda
-              a los empresarios a centrarse en lo que realmente mueve la aguja
-              y a ignorar el resto con confianza.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── PARA QUIÉN ────────────────────────────────────────────────────── */}
-      <section className="section bg-r-cream">
-        <div className="container-prose">
-          <p className="label-tag mb-4">El perfil</p>
-          <h2 className="font-display text-display-md text-r-dark">
-            Para quién es Rentabilismo
-          </h2>
-          <div className="mt-6 space-y-5 text-r-dark/85">
-            <p>
-              Para empresarios con un negocio en marcha que factura pero no
-              mejora. Para emprendedores que quieren construir bien desde el
-              principio. Para quien ya ha probado otras cosas y necesita algo
-              que funcione de verdad.
-            </p>
-            <p>
-              Prioritariamente hispanohablante. Prioritariamente en la fase
-              de operación y mejora, no en la de hipercrecimiento o salida a
-              mercados internacionales.
-            </p>
-            <p>
-              No es para quien busca escalar a millones en doce meses. Es para
-              quien quiere un negocio sano, ordenado y rentable que pueda
-              mantener y mejorar de forma continua.
-            </p>
-          </div>
-          <div className="mt-8">
-            <Button href="/para-quien-es" variant="secondary">
-              Ver los tres perfiles →
-            </Button>
           </div>
         </div>
       </section>
@@ -241,11 +228,14 @@ export default function QueEsRentabilismoPage() {
       {/* ── QUÉ CAMBIA ────────────────────────────────────────────────────── */}
       <section className="section bg-r-dark">
         <div className="container-site">
-          <SectionHeader
-            tag="El resultado"
-            title="Qué cambia cuando se aplica"
-            light
-          />
+          <p className="label-tag mb-4 text-r-warm/50">Lo que cambia</p>
+          <h2 className="font-display text-display-md text-r-white">
+            Qué ocurre cuando el sistema se aplica
+          </h2>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-r-warm/70">
+            No son promesas. Son los cambios concretos que produce aplicar
+            el Método 5P de forma consistente en un negocio real.
+          </p>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {QUE_CAMBIA.map((item) => (
               <li
@@ -253,16 +243,13 @@ export default function QueEsRentabilismoPage() {
                 className="flex items-start gap-4 border border-r-border-d p-5"
               >
                 <span className="mt-1 block h-2 w-2 shrink-0 rounded-full bg-r-green-2" />
-                <p className="text-[1rem] leading-relaxed text-r-warm/80">
-                  {item}
-                </p>
+                <p className="text-[1rem] leading-relaxed text-r-warm/80">{item}</p>
               </li>
             ))}
           </ul>
-          <div className="mt-12">
-            <Button href="/metodo-5p" variant="primary">
-              Ver el Método 5P →
-            </Button>
+          <div className="mt-12 flex flex-col gap-4 sm:flex-row">
+            <Button href="/metodo-5p" variant="primary">Ver el Método 5P →</Button>
+            <Button href="/manifiesto" variant="secondary">Leer el Manifiesto</Button>
           </div>
         </div>
       </section>

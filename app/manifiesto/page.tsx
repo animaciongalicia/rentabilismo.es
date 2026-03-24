@@ -3,14 +3,14 @@ import Button from "@/components/ui/Button";
 import { SITE_URL } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Manifiesto Rentabilista — Los principios del sistema",
+  title: "Manifiesto Rentabilista — Lo que creemos sobre los negocios",
   description:
-    "El Manifiesto Rentabilista recoge los principios que definen cómo entendemos la rentabilidad, los negocios y las personas que los construyen.",
+    "Una declaración sobre los negocios reales, la rentabilidad y las personas que los sostienen. Sin frases vacías. Sin promesas. Solo lo que creemos de verdad.",
   alternates: { canonical: `${SITE_URL}/manifiesto` },
   openGraph: {
     title: "Manifiesto Rentabilista",
     description:
-      "Los principios que definen cómo entendemos la rentabilidad y los negocios. Sin humo. Sin postureo. Solo claridad.",
+      "Lo que creemos sobre los negocios reales, la rentabilidad y las personas que los sostienen.",
     url: `${SITE_URL}/manifiesto`,
   },
 };
@@ -18,53 +18,53 @@ export const metadata: Metadata = {
 const PRINCIPIOS = [
   {
     num: "01",
-    title: "La rentabilidad no es el resultado de trabajar más. Es el resultado de trabajar bien.",
-    body: "El esfuerzo es necesario, pero no suficiente. Un negocio rentable no es el que más horas trabaja; es el que mejor usa las horas que trabaja.",
+    title: "No te falta esfuerzo. Te falta sistema.",
+    body: "El trabajo duro es necesario. Pero el trabajo duro sin sistema produce agotamiento, no resultados. Hemos visto negocios que trabajan el doble que su competencia y ganan la mitad. La diferencia no era el esfuerzo. Era la estructura. Deja de trabajar más. Empieza a trabajar mejor.",
   },
   {
     num: "02",
-    title: "Todo negocio tiene un problema de método antes de tener un problema de mercado.",
-    body: "Antes de culpar al sector, a la competencia o a la economía, hay que mirar dentro. La mayoría de los problemas de rentabilidad tienen solución interna.",
+    title: "Los márgenes importan más que la facturación.",
+    body: "Un negocio que factura un millón con el 3% de margen tiene un problema más serio que uno que factura trescientos mil con el 30%. Pero el primero parece más exitoso en cualquier red social. La facturación es un número visible. El margen es la realidad que sostiene el negocio. No te engañes con el primero para evitar mirar el segundo.",
   },
   {
     num: "03",
-    title: "Los precios correctos no se negocian. Se justifican.",
-    body: "Un precio bajo no es una estrategia. Es una señal de que algo no está claro: el valor que se entrega, el cliente al que se sirve o los costes que se asumen.",
+    title: "No todos tus clientes son buenos para tu negocio.",
+    body: "Un cliente que paga tarde, exige mucho, ocupa demasiado tiempo y genera poco margen no es un activo. Es un pasivo con nombre. La calidad de tu cartera de clientes determina la calidad de tu negocio. Elegir a quién sirves es una decisión estratégica, no un lujo.",
   },
   {
     num: "04",
-    title: "Los procesos no limitan la creatividad. La liberan.",
-    body: "Un sistema que funciona solo no encadena, libera. Cuando los procesos funcionan, el tiempo y la energía van a lo que realmente importa.",
+    title: "Tu precio comunica lo que piensas de tu propio trabajo.",
+    body: "Un precio bajo no es humildad ni estrategia. Es una señal de que algo no está claro: el valor que entregas, el cliente al que sirves o los costes que asumes. El precio correcto no es el más alto posible. Es el que refleja el valor real y genera el margen que el negocio necesita para funcionar.",
   },
   {
     num: "05",
-    title: "La promoción honesta no necesita ruido para funcionar.",
-    body: "Comunicar con claridad lo que haces, para quién y qué resultado produce es más poderoso que cualquier campaña construida sobre promesas vacías.",
+    title: "Si tu negocio depende de ti para todo, no tienes un negocio. Tienes un empleo.",
+    body: "Si mañana no puedes trabajar, ¿qué pasa? Si la respuesta es «se para» o «entra en caos», tienes un problema que ninguna estrategia de ventas va a resolver. Un negocio que solo funciona contigo no es un activo. Es un trabajo disfrazado con tu propio nombre.",
   },
   {
     num: "06",
-    title: "Un negocio sostenible es más valioso que un negocio que factura.",
-    body: "La facturación es un indicador. La rentabilidad es el objetivo. Un negocio que genera margen, cuida a su equipo y puede mantenerse en el tiempo vale más que uno que crece sin control.",
+    title: "Los procesos no limitan la creatividad. La liberan.",
+    body: "Cuando tienes sistemas que funcionan solos, tienes tiempo y energía para lo que realmente importa. El caos no es señal de dinamismo. Es señal de un negocio que no está construido. Los procesos dan libertad. La improvisación permanente da agotamiento.",
   },
   {
     num: "07",
-    title: "Claridad primero. Velocidad, después.",
-    body: "Moverse rápido sin saber hacia dónde es uno de los errores más caros que puede cometer un empresario. Primero entiende. Luego actúa. Y luego mantén el ritmo.",
+    title: "La promoción honesta no necesita ruido para funcionar.",
+    body: "Comunicar con claridad qué haces, para quién lo haces y qué resultado produce es más poderoso que cualquier campaña construida sobre promesas exageradas. El ruido atrae clientes equivocados. La claridad atrae clientes rentables.",
   },
   {
     num: "08",
-    title: "El cliente rentable es el que vuelve, no el que entra.",
-    body: "La adquisición tiene coste. La retención genera margen. Un negocio que trabaja para tener los clientes correctos gana más con menos esfuerzo.",
+    title: "Medir duele. No medir cuesta más.",
+    body: "Cuando no mides, decides por intuición y urgencia. Cuando mides, decides por datos e información. La primera opción parece más cómoda a corto plazo. A medio plazo, es la más cara. Medir no es burocracia. Es la única forma de saber si lo que haces funciona.",
   },
   {
     num: "09",
-    title: "Las personas correctas son la primera variable del sistema.",
-    body: "Un equipo mal estructurado, mal compensado o mal orientado consume más recursos de los que genera. Las personas no son un coste. Son el primer activo de cualquier negocio.",
+    title: "Mejorar de forma continua es más potente que transformar de golpe.",
+    body: "Los grandes cambios de negocio en muy poco tiempo suelen ser inestables. Las mejoras pequeñas, tomadas de forma continua y sostenida, construyen negocios más sólidos. El ritmo supera a la intensidad. Siempre.",
   },
   {
     num: "10",
-    title: "El método no es el destino. Es el camino.",
-    body: "Rentabilismo no promete un punto de llegada definitivo. Promete una forma de avanzar: con criterio, con datos y con la capacidad de corregir cuando algo no funciona.",
+    title: "Un negocio sostenible es más valioso que uno que explota.",
+    body: "Un negocio que genera margen consistente, que cuida a su equipo, que sirve bien a sus clientes y que puede mantenerse en el tiempo vale más que uno que crece sin control y se rompe con la primera crisis. Construye para que dure. No para que impresione.",
   },
 ];
 
@@ -79,9 +79,9 @@ export default function ManifiestoPage() {
             Manifiesto<br />Rentabilista
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/75">
-            No es un código ético. No es una lista de valores de empresa.
-            Es una declaración de cómo entendemos los negocios, la rentabilidad
-            y las personas que los construyen.
+            Esto no es motivación. No hay metáforas de vuelos ni referencias
+            al éxito de otros. Es una declaración de lo que creemos sobre los
+            negocios, el trabajo y la rentabilidad.
           </p>
         </div>
       </section>
@@ -89,21 +89,21 @@ export default function ManifiestoPage() {
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
       <section className="section-sm bg-r-white">
         <div className="container-prose">
-          <div className="space-y-5 text-r-dark/85">
-            <p className="text-lg leading-relaxed text-r-dark">
-              Creemos que la rentabilidad no es un accidente. Es el resultado
-              de tomar decisiones mejores, de forma más consistente, durante
-              más tiempo.
-            </p>
-            <p>
-              Creemos que la mayoría de los empresarios no necesitan más
-              motivación. Necesitan más método. Y que el método, bien aplicado,
-              genera la motivación que ningún curso puede dar.
-            </p>
-            <p>
-              Estos son los diez principios que definen Rentabilismo.
-            </p>
-          </div>
+          <p className="text-lg leading-relaxed text-r-dark">
+            Creemos en los negocios reales. No en los ideales de las
+            presentaciones de inversión. En los negocios con nóminas que pagar,
+            con clientes que se quejan y con meses en los que los números no
+            cuadran.
+          </p>
+          <p className="mt-4 leading-relaxed text-r-dark/80">
+            En los negocios donde hay una persona que toma decisiones sola,
+            a veces sin datos suficientes, muchas veces cansada, siempre
+            responsable de lo que ocurre.
+          </p>
+          <p className="mt-4 leading-relaxed text-r-dark/80">
+            Ese es nuestro universo. Estos son los diez principios que
+            definen cómo lo entendemos.
+          </p>
         </div>
       </section>
 
@@ -119,11 +119,9 @@ export default function ManifiestoPage() {
                   i < PRINCIPIOS.length - 1 ? "border-b border-r-border" : "",
                 ].join(" ")}
               >
-                {/* Número */}
                 <span className="font-body text-sm font-semibold tracking-widest text-r-muted/40 md:pt-1">
                   {p.num}
                 </span>
-                {/* Contenido */}
                 <div>
                   <h2 className="font-display text-display-sm text-r-dark">
                     {p.title}
@@ -140,20 +138,15 @@ export default function ManifiestoPage() {
       <section className="section bg-r-dark">
         <div className="container-prose">
           <p className="font-display text-display-md text-r-white">
-            Esto no es teoría. Es lo que aplicamos, lo que enseñamos y lo que
-            medimos.
+            Esto no es teoría. Es lo que aplicamos, enseñamos y medimos.
           </p>
-          <p className="mt-6 text-lg leading-relaxed text-r-warm/70">
-            Si esto resuena contigo, el siguiente paso es conocer el método
-            que lo hace posible.
+          <p className="mt-5 text-lg leading-relaxed text-r-warm/70">
+            Si algo de esto resuena con lo que has vivido en tu negocio,
+            el siguiente paso es conocer el método concreto que lo hace posible.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Button href="/metodo-5p" variant="primary">
-              Ver el Método 5P
-            </Button>
-            <Button href="/empieza-aqui" variant="secondary">
-              Empieza aquí
-            </Button>
+            <Button href="/metodo-5p" variant="primary">Ver el Método 5P</Button>
+            <Button href="/filosofia" variant="secondary">La filosofía del sistema</Button>
           </div>
         </div>
       </section>

@@ -1,90 +1,67 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
-import { SITE_URL } from "@/lib/siteConfig";
+import { SITE_URL, METODO_5P_LINKS } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Empieza aquí — Tu punto de entrada a Rentabilismo",
   description:
-    "Encuentra tu punto de partida en Rentabilismo según tu situación actual. Rutas claras para empresarios bloqueados, hartos de probar cosas, o que quieren empezar bien.",
+    "No hay un único sitio por donde empezar. Hay uno correcto para tu situación. Elige la ruta que encaja con donde estás ahora.",
   alternates: { canonical: `${SITE_URL}/empieza-aqui` },
   openGraph: {
     title: "Empieza aquí — Rentabilismo",
     description:
-      "Tu punto de entrada al sistema. Rutas claras según tu situación.",
+      "Tres rutas según tu situación. Elige la tuya.",
     url: `${SITE_URL}/empieza-aqui`,
   },
 };
 
-// ─── Rutas orientadas ─────────────────────────────────────────────────────────
 const RUTAS = [
   {
     id: "ruta-bloqueado",
-    num: "01",
-    situacion: "Tengo negocio y estoy bloqueado",
+    situacion: "Si tu negocio existe pero no mejora",
     descripcion:
-      "Tu negocio lleva tiempo sin mejorar aunque trabajes duro. Necesitas diagnóstico claro y un punto de actuación concreto.",
-    pasos: [
-      { label: "Entiende el sistema completo", href: "/que-es-rentabilismo" },
-      { label: "Estudia el Método 5P", href: "/metodo-5p" },
-      { label: "Identifica tu perfil", href: "/para-quien-es#bloqueado" },
+      "Facturas, tienes clientes, pero los márgenes no crecen aunque trabajes más. Necesitas saber qué palanca está limitando el negocio antes de hacer cualquier otra cosa.",
+    orden: [
+      { paso: "Lee qué es Rentabilismo", href: "/que-es-rentabilismo", desc: "Para entender el marco antes de aplicarlo." },
+      { paso: "Estudia el Método 5P completo", href: "/metodo-5p", desc: "Para identificar cuál de las cinco palancas es tu cuello de botella." },
+      { paso: "Lee la Filosofía", href: "/filosofia", desc: "Para entender el criterio con el que se toman las decisiones." },
     ],
-    cta: { label: "Empezar por aquí", href: "/metodo-5p" },
+    cta: { label: "Empezar por Qué es Rentabilismo", href: "/que-es-rentabilismo" },
   },
   {
     id: "ruta-hastiado",
-    num: "02",
-    situacion: "He probado mucho y sigo igual",
+    situacion: "Si ya has probado muchas cosas sin resultado",
     descripcion:
-      "Ya conoces el mercado de la formación. Sabes lo que no funciona. Buscas algo concreto, honesto y aplicable.",
-    pasos: [
-      { label: "Lee el Manifiesto para entender la filosofía", href: "/manifiesto" },
-      { label: "Revisa en qué se diferencia esto", href: "/que-es-rentabilismo" },
-      { label: "Ve al Método 5P directamente", href: "/metodo-5p" },
+      "Conoces el mercado de la formación y la consultoría. Sabes distinguir el humo. Lo que buscas es algo concreto, sin promesas vacías y que puedas aplicar tú mismo.",
+    orden: [
+      { paso: "Lee el Manifiesto", href: "/manifiesto", desc: "Para ver si lo que defendemos encaja con lo que buscas." },
+      { paso: "Revisa en qué se diferencia esto", href: "/que-es-rentabilismo", desc: "La sección «Frente a lo que ya conoces» responde directamente a tu escepticismo." },
+      { paso: "Entra al Método 5P", href: "/metodo-5p", desc: "Sin preámbulos. A ver si el sistema tiene sentido para tu negocio concreto." },
     ],
-    cta: { label: "Leer el Manifiesto primero", href: "/manifiesto" },
+    cta: { label: "Empezar por el Manifiesto", href: "/manifiesto" },
   },
   {
     id: "ruta-empezando",
-    num: "03",
-    situacion: "Quiero empezar sin hacerlo mal",
+    situacion: "Si estás empezando y no quieres hacerlo mal",
     descripcion:
-      "Estás en el inicio o en una fase temprana. Este es el mejor momento para aprender el sistema antes de construir encima.",
-    pasos: [
-      { label: "Entiende qué es Rentabilismo", href: "/que-es-rentabilismo" },
-      { label: "Aprende el Método 5P desde cero", href: "/metodo-5p" },
-      { label: "Revisa el Diccionario para el vocabulario base", href: "/diccionario" },
+      "Tienes un proyecto o un negocio reciente. Este es el mejor momento: construir bien desde el principio es mucho más fácil que arreglar lo que lleva años mal.",
+    orden: [
+      { paso: "Entiende el sistema completo", href: "/que-es-rentabilismo", desc: "El marco general antes de entrar en el método." },
+      { paso: "Aprende el Método 5P de principio a fin", href: "/metodo-5p", desc: "En ese orden: Personas, Producto, Precios, Procesos, Promoción." },
+      { paso: "Usa el Diccionario como referencia", href: "/diccionario", desc: "Para tener el vocabulario claro desde el inicio." },
     ],
-    cta: { label: "Empezar desde el principio", href: "/que-es-rentabilismo" },
+    cta: { label: "Empezar por Qué es Rentabilismo", href: "/que-es-rentabilismo" },
   },
 ];
 
-// ─── Recursos de referencia ───────────────────────────────────────────────────
-const RECURSOS = [
-  {
-    title: "Qué es Rentabilismo",
-    desc: "La página pilar. Definición, origen y propósito del sistema.",
-    href: "/que-es-rentabilismo",
-    tiempo: "10 min lectura",
-  },
-  {
-    title: "Manifiesto Rentabilista",
-    desc: "Los diez principios que definen la filosofía del sistema.",
-    href: "/manifiesto",
-    tiempo: "8 min lectura",
-  },
-  {
-    title: "Método 5P",
-    desc: "Las cinco palancas explicadas en detalle con aplicación práctica.",
-    href: "/metodo-5p",
-    tiempo: "15 min lectura",
-  },
-  {
-    title: "Diccionario",
-    desc: "El vocabulario preciso del sistema para pensar con claridad.",
-    href: "/diccionario",
-    tiempo: "Consulta rápida",
-  },
+const RECURSOS_RAPIDOS = [
+  { title: "Qué es Rentabilismo", href: "/que-es-rentabilismo", tiempo: "10 min" },
+  { title: "Manifiesto", href: "/manifiesto", tiempo: "8 min" },
+  { title: "Filosofía", href: "/filosofia", tiempo: "12 min" },
+  { title: "Método 5P", href: "/metodo-5p", tiempo: "15 min" },
+  { title: "Para quién es", href: "/para-quien-es", tiempo: "7 min" },
+  { title: "Diccionario", href: "/diccionario", tiempo: "Consulta" },
 ];
 
 export default function EmpiezaAquiPage() {
@@ -99,7 +76,7 @@ export default function EmpiezaAquiPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/80">
             No hay un único punto de entrada. Hay uno correcto para tu
-            situación. Elige el tuyo.
+            situación. Identifica cuál es la tuya y sigue esa ruta.
           </p>
         </div>
       </section>
@@ -107,64 +84,57 @@ export default function EmpiezaAquiPage() {
       {/* ── PREGUNTA ORIENTADORA ──────────────────────────────────────────── */}
       <section className="section-sm bg-r-white">
         <div className="container-prose">
-          <p className="label-tag mb-4">Antes de empezar</p>
           <h2 className="font-display text-display-md text-r-dark">
-            ¿Cuál es tu situación real ahora mismo?
+            ¿Cuál es tu situación ahora mismo?
           </h2>
-          <p className="mt-4 text-r-dark/80">
-            La respuesta a esa pregunta determina por dónde empiezas.
-            Rentabilismo no tiene un único camino: tiene rutas distintas según
-            de dónde partes.
+          <p className="mt-4 leading-relaxed text-r-dark/80">
+            Esa pregunta determina por dónde empiezas. Rentabilismo tiene
+            rutas distintas para situaciones distintas. Leer en el orden
+            correcto ahorra tiempo y aumenta la probabilidad de que lo que
+            lees sea útil de verdad.
           </p>
         </div>
       </section>
 
-      {/* ── RUTAS ─────────────────────────────────────────────────────────── */}
+      {/* ── LAS TRES RUTAS ────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site">
-          <div className="space-y-6">
-            {RUTAS.map((ruta, i) => (
+        <div className="container-site max-w-mid">
+          <div className="space-y-8">
+            {RUTAS.map((ruta) => (
               <div key={ruta.id} id={ruta.id} className="card">
-                <div className="grid gap-8 md:grid-cols-[1fr_2fr_auto]">
+                <h2 className="font-display text-display-sm text-r-dark">
+                  {ruta.situacion}
+                </h2>
+                <p className="mt-3 leading-relaxed text-r-dark/75">
+                  {ruta.descripcion}
+                </p>
 
-                  {/* Situación */}
-                  <div>
-                    <span className="label-tag">{ruta.num}</span>
-                    <h2 className="mt-2 font-display text-display-sm text-r-dark">
-                      {ruta.situacion}
-                    </h2>
-                    <p className="mt-3 text-sm leading-relaxed text-r-muted">
-                      {ruta.descripcion}
-                    </p>
-                  </div>
-
-                  {/* Pasos */}
-                  <div>
-                    <p className="label-tag mb-3">Ruta sugerida</p>
-                    <ol className="space-y-2.5" role="list">
-                      {ruta.pasos.map((paso, j) => (
-                        <li key={paso.href} className="flex items-start gap-3">
-                          <span className="font-body mt-0.5 text-xs font-semibold tracking-widest text-r-muted/50">
-                            {String(j + 1).padStart(2, "0")}
-                          </span>
+                <div className="mt-7 border-t border-r-border pt-7">
+                  <p className="label-tag mb-4">Ruta sugerida</p>
+                  <ol className="space-y-4">
+                    {ruta.orden.map((item, j) => (
+                      <li key={item.href} className="grid grid-cols-[2rem_1fr] gap-3">
+                        <span className="font-body mt-0.5 text-xs font-semibold tracking-widest text-r-muted/40">
+                          {String(j + 1).padStart(2, "0")}
+                        </span>
+                        <div>
                           <Link
-                            href={paso.href}
-                            className="text-sm font-medium text-r-dark underline-offset-4 hover:text-r-green"
+                            href={item.href}
+                            className="font-medium text-r-dark underline-offset-4 hover:text-r-green"
                           >
-                            {paso.label}
+                            {item.paso}
                           </Link>
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
+                          <p className="mt-0.5 text-sm text-r-muted">{item.desc}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
 
-                  {/* CTA */}
-                  <div className="flex items-center md:justify-end">
-                    <Button href={ruta.cta.href} variant="primary">
-                      {ruta.cta.label}
-                    </Button>
-                  </div>
-
+                <div className="mt-7">
+                  <Button href={ruta.cta.href} variant="primary">
+                    {ruta.cta.label} →
+                  </Button>
                 </div>
               </div>
             ))}
@@ -172,30 +142,41 @@ export default function EmpiezaAquiPage() {
         </div>
       </section>
 
-      {/* ── RECURSOS ──────────────────────────────────────────────────────── */}
+      {/* ── TODAS LAS PÁGINAS ─────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
         <div className="container-site">
-          <p className="label-tag mb-8">Todos los recursos</p>
-          <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-2 lg:grid-cols-4">
-            {RECURSOS.map((r) => (
+          <p className="label-tag mb-6">Todo el contenido disponible</p>
+          <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-2 lg:grid-cols-3">
+            {RECURSOS_RAPIDOS.map((r) => (
               <Link
-                key={r.title}
+                key={r.href}
                 href={r.href}
-                className="group flex flex-col gap-4 bg-r-warm p-7 no-underline transition-colors hover:bg-r-cream"
+                className="group flex items-center justify-between gap-4 bg-r-warm px-6 py-5 no-underline transition-colors hover:bg-r-cream"
               >
-                <div>
-                  <p className="font-body text-xs font-semibold uppercase tracking-widest text-r-muted/50">
-                    {r.tiempo}
-                  </p>
-                  <h3 className="mt-2 font-display text-lg font-semibold text-r-dark group-hover:text-r-green">
-                    {r.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-r-muted">
-                    {r.desc}
-                  </p>
-                </div>
-                <span className="mt-auto text-sm font-semibold text-r-green">
-                  Leer →
+                <span className="font-body font-medium text-r-dark group-hover:text-r-green">
+                  {r.title}
+                </span>
+                <span className="shrink-0 text-xs text-r-muted/60">{r.tiempo}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── LAS 5P RÁPIDO ─────────────────────────────────────────────────── */}
+      <section className="section bg-r-white">
+        <div className="container-site">
+          <p className="label-tag mb-6">El Método 5P — acceso directo</p>
+          <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-5">
+            {METODO_5P_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="group flex flex-col gap-2 bg-r-white px-5 py-5 no-underline transition-colors hover:bg-r-cream"
+              >
+                <span className="text-xs font-semibold tracking-widest text-r-muted/50">{link.num}</span>
+                <span className="font-body font-semibold text-r-dark group-hover:text-r-green">
+                  {link.label}
                 </span>
               </Link>
             ))}
@@ -203,52 +184,42 @@ export default function EmpiezaAquiPage() {
         </div>
       </section>
 
-      {/* ── ECOSISTEMA (espacios preparados) ─────────────────────────────── */}
+      {/* ── ECOSISTEMA ────────────────────────────────────────────────────── */}
       <section className="section bg-r-dark">
         <div className="container-site">
-          <p className="label-tag mb-6 text-r-warm/50">Ecosistema Rentabilismo</p>
+          <p className="label-tag mb-6 text-r-warm/50">Más allá de esta web</p>
           <h2 className="font-display text-display-md text-r-white">
-            Más allá de esta web
+            El ecosistema Rentabilismo
           </h2>
-          <p className="mt-4 max-w-xl text-lg leading-relaxed text-r-warm/70">
-            Rentabilismo tiene varios activos que trabajan juntos. Esta web es
-            el centro conceptual. Aquí encontrarás el sistema, la filosofía
-            y el método.
+          <p className="mt-4 max-w-xl leading-relaxed text-r-warm/65">
+            Esta web es el centro conceptual: el sistema, la filosofía y el
+            método. Hay otros activos para quien quiera ir más lejos.
           </p>
-
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
               {
-                name: "Plataforma SaaS",
+                nombre: "Plataforma de consultoría",
                 url: "rentabilismo.com",
-                desc: "Consultoría guiada online, herramientas y diagnósticos.",
-                href: "#",
+                desc: "Diagnósticos guiados, herramientas y acompañamiento online.",
               },
               {
-                name: "Blog de contenidos",
+                nombre: "Blog de contenidos",
                 url: "focorentabilismo.com",
-                desc: "Artículos, casos prácticos y recursos actualizados.",
-                href: "#",
+                desc: "Artículos prácticos y recursos para seguir aprendiendo.",
               },
               {
-                name: "Consultoría en A Coruña",
+                nombre: "Consultoría presencial",
                 url: "consultoriametodo.es",
-                desc: "Servicio directo de consultoría presencial.",
-                href: "#",
+                desc: "Trabajo directo con empresarios en A Coruña y por remoto.",
               },
             ].map((item) => (
-              <div
-                key={item.name}
-                className="border border-r-border-d p-6"
-              >
-                <p className="text-xs font-semibold uppercase tracking-widest text-r-warm/40">
+              <div key={item.nombre} className="border border-r-border-d p-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-r-warm/35">
                   {item.url}
                 </p>
-                <p className="mt-2 font-semibold text-r-white">{item.name}</p>
-                <p className="mt-2 text-sm leading-relaxed text-r-warm/60">
-                  {item.desc}
-                </p>
-                <p className="mt-4 text-xs text-r-warm/30">Próximamente →</p>
+                <p className="mt-2 font-semibold text-r-white">{item.nombre}</p>
+                <p className="mt-2 text-sm leading-relaxed text-r-warm/55">{item.desc}</p>
+                <p className="mt-4 text-xs text-r-warm/25">Próximamente →</p>
               </div>
             ))}
           </div>
