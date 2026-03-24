@@ -83,9 +83,9 @@ export default function PromocionPublicidadPage() {
               <h3 className="font-display text-display-sm text-r-dark mb-3">Claridad del mensaje</h3>
               <p className="text-r-dark/80 text-sm leading-relaxed">
                 ¿Tu comunicación explica qué resultado produce tu producto,
-                no solo lo que es? "Somos una agencia de marketing" no dice
-                nada. "Ayudamos a empresas industriales a conseguir reuniones
-                cualificadas con clientes nuevos" sí.
+                no solo lo que es? &ldquo;Somos una agencia de marketing&rdquo; no dice
+                nada. &ldquo;Ayudamos a empresas industriales a conseguir reuniones
+                cualificadas con clientes nuevos&rdquo; sí.
               </p>
             </div>
             <div className="card">
@@ -150,7 +150,7 @@ export default function PromocionPublicidadPage() {
             <p>
               Los negocios que no tienen esa claridad persiguen clientes que
               siempre tienen dudas. Cada venta es una negociación larga, llena
-              de "lo voy a pensar", "es que no sé si esto es para mí" y
+              de &ldquo;lo voy a pensar&rdquo;, &ldquo;es que no sé si esto es para mí&rdquo; y
               peticiones de descuento. El problema no es el cliente: es que
               la comunicación no ha hecho el trabajo previo.
             </p>

@@ -178,7 +178,7 @@ export default function ProcesosPage() {
             <p>
               Muchos empresarios quieren automatizar antes de tener el proceso
               claro. Buscan herramientas, compran software, contratan a alguien
-              para que "digitalice" su negocio. El resultado habitual es
+              para que &ldquo;digitalice&rdquo; su negocio. El resultado habitual es
               automatizar el caos: hacer más rápido lo que no funciona bien.
             </p>
             <p>
@@ -190,8 +190,8 @@ export default function ProcesosPage() {
             <p>
               Una tarea que se hace dos veces al mes no necesita automatización.
               Una tarea que se hace veinte veces al día, sí. La pregunta no es
-              "¿puedo automatizar esto?" sino "¿merece la pena el esfuerzo de
-              automatizarlo dado el volumen que tiene?".
+              &ldquo;¿puedo automatizar esto?&rdquo; sino &ldquo;¿merece la pena el esfuerzo de
+              automatizarlo dado el volumen que tiene?&rdquo;.
             </p>
           </div>
         </div>

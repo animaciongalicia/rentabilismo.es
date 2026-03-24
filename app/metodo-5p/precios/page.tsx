@@ -180,7 +180,7 @@ export default function PreciosPage() {
               por precio es suicidio financiero lento.
             </p>
             <p>
-              La frase "tengo que estar en precio de mercado" suena razonable
+              La frase &ldquo;tengo que estar en precio de mercado&rdquo; suena razonable
               pero no lo es. El mercado incluye empresas con estructuras de
               costes muy distintas. Estar en el precio de una empresa grande
               siendo pequeño significa trabajar sin margen.

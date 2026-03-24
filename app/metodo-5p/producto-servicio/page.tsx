@@ -49,8 +49,8 @@ export default function ProductoServicioPage() {
               y consumen más recursos de lo que aportan.
             </p>
             <p>
-              Muchos negocios tienen una oferta demasiado amplia: "sirvo a todo
-              el mundo", "hago de todo". Sin claridad de qué incluye el servicio
+              Muchos negocios tienen una oferta demasiado amplia: &ldquo;sirvo a todo
+              el mundo&rdquo;, &ldquo;hago de todo&rdquo;. Sin claridad de qué incluye el servicio
               y qué no, sin saber si cada línea genera margen o lo consume. El
               resultado es actividad sin rentabilidad.
             </p>
@@ -87,8 +87,8 @@ export default function ProductoServicioPage() {
               <p className="text-r-dark/80 text-sm leading-relaxed">
                 ¿Sabes cuáles de tus servicios o productos generan margen y
                 cuáles lo consumen? Muchos negocios mantienen líneas de producto
-                que no cubren sus costes reales porque "vienen de siempre"
-                o porque "los clientes lo piden".
+                que no cubren sus costes reales porque &ldquo;vienen de siempre&rdquo;
+                o porque &ldquo;los clientes lo piden&rdquo;.
               </p>
             </div>
             <div className="card">
