@@ -222,7 +222,7 @@ export default function PreciosPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-dark">
+      <section className="section bg-r-green">
         <div className="container-prose">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">

@@ -72,7 +72,7 @@ export default function ManifiestoPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 md:py-28">
+      <section className="bg-r-dark py-24 md:py-32">
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Declaración de principios</p>
           <h1 className="font-display text-display-xl text-r-white">
@@ -135,7 +135,7 @@ export default function ManifiestoPage() {
       </section>
 
       {/* ── CIERRE ────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-dark">
+      <section className="section bg-r-green">
         <div className="container-prose">
           <p className="font-display text-display-md text-r-white">
             Esto no es teoría. Es lo que aplicamos, enseñamos y medimos.

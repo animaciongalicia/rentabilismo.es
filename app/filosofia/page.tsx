@@ -197,7 +197,7 @@ export default function FilosofiaPage() {
       ))}
 
       {/* ── CIERRE ────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-dark">
+      <section className="section bg-r-green">
         <div className="container-prose">
           <p className="font-display text-display-md text-r-white">
             La filosofía sin método es intención. El método sin filosofía

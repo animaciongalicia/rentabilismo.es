@@ -185,7 +185,7 @@ export default function EmpiezaAquiPage() {
       </section>
 
       {/* ── ECOSISTEMA ────────────────────────────────────────────────────── */}
-      <section className="section bg-r-dark">
+      <section className="section bg-r-green">
         <div className="container-site">
           <p className="label-tag mb-6 text-r-warm/50">Más allá de esta web</p>
           <h2 className="font-display text-display-md text-r-white">

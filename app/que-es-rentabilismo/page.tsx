@@ -226,7 +226,7 @@ export default function QueEsRentabilismoPage() {
       </section>
 
       {/* ── QUÉ CAMBIA ────────────────────────────────────────────────────── */}
-      <section className="section bg-r-dark">
+      <section className="section bg-r-green">
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Lo que cambia</p>
           <h2 className="font-display text-display-md text-r-white">

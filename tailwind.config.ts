@@ -10,16 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         r: {
-          dark:       "#0C1A0E",  // negro verdoso profundo — texto principal
-          green:      "#1A3828",  // verde bosque oscuro — acento primario
-          "green-2":  "#2C5C42",  // verde medio — hover, variantes
+          dark:       "#1C3A22",  // verde bosque oscuro — texto principal y fondos hero
+          green:      "#1F5438",  // verde bosque medio — botones, accents, secciones CTA
+          "green-2":  "#2D7050",  // verde medio-claro — hover, variantes
           lime:       "#8DC63F",  // verde lima — favicon, marca
           cream:      "#F5F2EB",  // crema cálida — fondo principal
           warm:       "#EDE9DF",  // crema más oscura — secciones alternadas
           gold:       "#B5801E",  // oro apagado — acento secundario (uso muy contenido)
           muted:      "#6B6357",  // gris cálido — texto secundario
           border:     "#CFC9BE",  // borde sutil sobre crema
-          "border-d": "#3A5040",  // borde sobre verde oscuro
+          "border-d": "#3E6A52",  // borde sobre verde oscuro (ajustado)
           white:      "#FDFCFA",  // blanco ligeramente cálido
         },
       },
