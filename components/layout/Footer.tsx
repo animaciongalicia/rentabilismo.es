@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV_LINKS, ECOSYSTEM_LINKS, SITE_NAME } from "@/lib/siteConfig";
+import { NAV_LINKS, ECOSYSTEM_LINKS, METODO_5P_LINKS, SITE_NAME } from "@/lib/siteConfig";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,7 +9,7 @@ export default function Footer() {
 
       {/* Bloque principal */}
       <div className="container-site py-14 md:py-16">
-        <div className="grid gap-12 md:grid-cols-3 md:gap-8 lg:gap-16">
+        <div className="grid gap-12 md:grid-cols-4 md:gap-8 lg:gap-12">
 
           {/* Columna 1 – Identidad */}
           <div className="md:col-span-1">
@@ -44,7 +44,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Columna 3 – Ecosistema */}
+          {/* Columna 3 – Método 5P */}
+          <div>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-r-warm/50">
+              Método 5P
+            </p>
+            <ul className="space-y-2.5" role="list">
+              {METODO_5P_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="flex items-center gap-2 text-sm text-r-warm/75 no-underline transition-colors hover:text-r-white"
+                  >
+                    <span className="text-xs text-r-warm/35">{link.num}</span>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Columna 4 – Ecosistema */}
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-r-warm/50">
               Ecosistema

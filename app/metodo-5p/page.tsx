@@ -164,28 +164,41 @@ export default function Metodo5PPage() {
       {/* ── LAS 5P ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-site">
-          <p className="label-tag mb-8">Las cinco palancas</p>
-          <div className="grid gap-6 md:grid-cols-1">
+          <p className="label-tag mb-2">Las cinco palancas</p>
+          <div className="divide-y divide-r-border">
             {RESUMEN_5P.map((p) => (
               <Link
                 key={p.href}
                 href={p.href}
-                className="group card flex flex-col gap-0 no-underline transition-colors hover:border-r-green md:grid md:grid-cols-[5rem_1fr_auto] md:items-center md:gap-8"
+                className="group flex flex-col gap-5 py-8 no-underline md:flex-row md:items-start md:gap-12 md:py-10"
               >
-                <div className="mb-4 md:mb-0">
-                  <span className="font-body text-xs font-semibold tracking-widest text-r-muted/50">{p.num}</span>
-                  <p className="mt-1 font-display text-2xl font-bold text-r-green">{p.nombre}</p>
+                {/* Número + Nombre */}
+                <div className="shrink-0 md:w-44">
+                  <span className="text-xs font-semibold tracking-widest text-r-muted/40">{p.num}</span>
+                  <p className="mt-1 font-display text-display-sm text-r-green group-hover:text-r-green-2 transition-colors">
+                    {p.nombre}
+                  </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-r-dark group-hover:text-r-green">{p.titular}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-r-muted">{p.resumen}</p>
-                  <div className="mt-3 flex items-start gap-2">
-                    <span className="label-tag text-r-muted/50">Señal de problema:</span>
-                    <span className="text-xs italic text-r-muted/70">{p.señal}</span>
-                  </div>
+
+                {/* Contenido */}
+                <div className="flex-1">
+                  <p className="font-semibold text-r-dark group-hover:text-r-green transition-colors">
+                    {p.titular}
+                  </p>
+                  <p className="mt-3 text-[1rem] leading-relaxed text-r-muted">
+                    {p.resumen}
+                  </p>
+                  <p className="mt-4 text-sm text-r-muted/60 italic">
+                    <span className="not-italic font-semibold uppercase tracking-widest text-[0.65rem] text-r-muted/40 mr-2">
+                      Señal:
+                    </span>
+                    {p.señal}
+                  </p>
                 </div>
-                <div className="mt-4 shrink-0 text-sm font-semibold text-r-green md:mt-0">
-                  Ver en detalle →
+
+                {/* Flecha */}
+                <div className="shrink-0 self-center text-sm font-semibold text-r-green opacity-0 transition-opacity group-hover:opacity-100 md:pr-2">
+                  Ver →
                 </div>
               </Link>
             ))}
