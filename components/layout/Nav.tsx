@@ -10,21 +10,21 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-r-border bg-r-cream/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-r-border bg-r-cream/96 backdrop-blur-sm">
       <div className="container-site">
-        <nav className="flex h-16 items-center justify-between md:h-[4.5rem]">
+        <nav className="flex h-16 items-center justify-between md:h-[4.75rem]">
 
           {/* Marca */}
           <Link
             href="/"
-            className="font-display text-[1.125rem] font-semibold tracking-tight text-r-dark no-underline hover:text-r-green"
+            className="font-display text-[1.3125rem] font-semibold tracking-tight text-r-dark no-underline hover:text-r-green"
             onClick={() => setOpen(false)}
           >
-            Rentabilismo
+            Rentabilismo<span className="text-r-lime" aria-hidden="true">.</span>
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden items-center gap-7 md:flex" role="list">
+          <ul className="hidden items-center gap-6 md:flex" role="list">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link

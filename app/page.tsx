@@ -81,16 +81,16 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 md:py-28 lg:py-36">
+      <section className="bg-r-dark py-24 md:py-32 lg:py-40">
         <div className="container-site">
-          <div className="max-w-[820px]">
-            <p className="label-tag mb-5 text-r-warm/50">
+          <div className="max-w-[880px]">
+            <p className="label-tag mb-6 text-r-warm/50">
               Sistema · Método · Criterio
             </p>
             <h1 className="font-display text-display-xl text-r-white">
               Trabajas duro.<br />Tu negocio merece funcionar mejor.
             </h1>
-            <p className="mt-6 max-w-prose text-xl leading-relaxed text-r-warm/80">
+            <p className="mt-7 max-w-[640px] text-xl leading-relaxed text-r-warm/80">
               Rentabilismo es el sistema para construir negocios realmente
               rentables. Sin teorías vacías, sin promesas de gurú. Con un método
               claro y lenguaje directo para empresarios que necesitan resultados
@@ -236,7 +236,7 @@ export default function HomePage() {
       {/* ── FILOSOFÍA / PILARES ────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-site">
-          <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
+          <div className="grid gap-10 md:grid-cols-[280px_1fr] md:gap-16 lg:gap-20">
             <div>
               <p className="label-tag mb-3">La filosofía</p>
               <h2 className="font-display text-display-lg text-r-dark">

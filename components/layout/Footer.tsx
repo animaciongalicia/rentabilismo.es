@@ -15,9 +15,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link
               href="/"
-              className="font-display text-lg font-semibold text-r-white no-underline hover:text-r-warm"
+              className="font-display text-[1.25rem] font-semibold text-r-white no-underline hover:text-r-warm"
             >
-              Rentabilismo
+              Rentabilismo<span className="text-r-lime" aria-hidden="true">.</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-r-warm/70">
               El sistema práctico para construir negocios realmente rentables.

@@ -23,7 +23,7 @@
 
   body {
     @apply bg-r-cream text-r-dark font-body;
-    line-height: 1.7;
+    line-height: 1.75;
   }
 
   h1, h2, h3 {
@@ -35,7 +35,7 @@
   }
 
   p {
-    @apply text-[1.0625rem] leading-relaxed;
+    @apply text-[1.0625rem] leading-[1.82];
   }
 
   a {
@@ -56,14 +56,14 @@
 ───────────────────────────────────────── */
 @layer components {
 
-  /* Contenedor principal */
+  /* Contenedor principal — grids, secciones anchas */
   .container-site {
-    @apply mx-auto w-full max-w-wide px-5 sm:px-8 lg:px-12;
+    @apply mx-auto w-full max-w-wide px-5 sm:px-8 lg:px-14;
   }
 
-  /* Contenedor de prosa (lectura cómoda) */
+  /* Contenedor editorial — prosa amplia en páginas internas (860px) */
   .container-prose {
-    @apply mx-auto w-full max-w-prose px-5 sm:px-8;
+    @apply mx-auto w-full max-w-narrow px-5 sm:px-8 lg:px-10;
   }
 
   /* Sección estándar */
@@ -82,7 +82,7 @@
 
   /* Tag / etiqueta pequeña */
   .label-tag {
-    @apply inline-block font-body text-xs font-semibold uppercase tracking-widest text-r-muted;
+    @apply inline-block font-body text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-r-muted;
   }
 
   /* Card base */

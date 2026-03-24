@@ -98,7 +98,7 @@ export default function FilosofiaPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 md:py-28">
+      <section className="bg-r-dark py-24 md:py-32">
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Los principios del sistema</p>
           <h1 className="font-display text-display-xl text-r-white">
@@ -155,7 +155,7 @@ export default function FilosofiaPage() {
           className={`section ${i % 2 === 0 ? "bg-r-cream" : "bg-r-white"}`}
         >
           <div className="container-site">
-            <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
+            <div className="grid gap-10 md:grid-cols-[220px_1fr] md:gap-16 lg:gap-20">
 
               {/* Número grande */}
               <div className="md:pt-1">
