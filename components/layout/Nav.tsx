@@ -10,7 +10,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-r-border bg-r-cream/96 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-r-border bg-r-cream">
       <div className="container-site">
         <nav className="flex h-16 items-center justify-between md:h-[4.75rem]">
 
