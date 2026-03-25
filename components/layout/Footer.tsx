@@ -78,6 +78,9 @@ export default function Footer() {
                   >
                     {item.label}
                   </Link>
+                  <p className="mt-0.5 text-[0.7rem] font-medium text-r-lime/60">
+                    {item.sublabel}
+                  </p>
                   <p className="mt-0.5 text-xs text-r-warm/45">
                     {item.description}
                   </p>
