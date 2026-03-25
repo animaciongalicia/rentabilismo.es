@@ -14,13 +14,13 @@ const config: Config = {
           green:      "#1F5438",  // verde bosque medio — botones, accents, secciones CTA
           "green-2":  "#2D7050",  // verde medio-claro — hover, variantes
           lime:       "#8DC63F",  // verde lima — favicon, marca
-          cream:      "#F5F2EB",  // crema cálida — fondo principal
-          warm:       "#EDE9DF",  // crema más oscura — secciones alternadas
+          cream:      "#F5F2EB",  // crema cálida — fondo principal del body
+          warm:       "#F1EEE7",  // crema levemente más oscura — secciones alternas (casi idéntica)
           gold:       "#B5801E",  // oro apagado — acento secundario (uso muy contenido)
           muted:      "#6B6357",  // gris cálido — texto secundario
-          border:     "#CFC9BE",  // borde sutil sobre crema
-          "border-d": "#3E6A52",  // borde sobre verde oscuro (ajustado)
-          white:      "#FDFCFA",  // blanco ligeramente cálido
+          border:     "#DDD9D0",  // borde sutil sobre crema (reforzado ligeramente)
+          "border-d": "#3E6A52",  // borde sobre verde oscuro
+          white:      "#F8F6F2",  // blanco cálido — secciones claras (misma familia que cream)
         },
       },
       fontFamily: {

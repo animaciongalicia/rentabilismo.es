@@ -88,6 +88,29 @@
     @apply py-section-sm;
   }
 
+  /*
+    Separador automático entre secciones de tono claro consecutivas.
+    Evita depender del cambio de color de fondo para indicar "nueva sección".
+    No se aplica a secciones oscuras ni verdes (tienen contraste propio).
+  */
+  .section + .section,
+  .section-sm + .section,
+  .section + .section-sm,
+  .section-sm + .section-sm {
+    border-top: 1px solid #DDD9D0;
+  }
+
+  .bg-r-dark + .section,
+  .bg-r-dark + .section-sm,
+  .bg-r-green + .section,
+  .bg-r-green + .section-sm,
+  .section + .bg-r-dark,
+  .section-sm + .bg-r-dark,
+  .section + .bg-r-green,
+  .section-sm + .bg-r-green {
+    border-top: none;
+  }
+
   /* Línea divisoria sutil */
   .divider {
     @apply border-t border-r-border;
@@ -100,7 +123,7 @@
 
   /* Card base */
   .card {
-    @apply rounded-none border border-r-border bg-r-white p-6 md:p-8;
+    @apply rounded-none border border-r-border bg-r-white p-5;
   }
 
   /* Card con acento verde */
