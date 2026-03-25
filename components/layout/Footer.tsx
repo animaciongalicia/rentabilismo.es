@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV_LINKS, ECOSYSTEM_LINKS, METODO_5P_LINKS, TOOLS_FREE, SITE_NAME } from "@/lib/siteConfig";
+import { NAV_LINKS, ECOSYSTEM_LINKS, METODO_5P_LINKS, SITE_NAME } from "@/lib/siteConfig";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -86,21 +86,7 @@ export default function Footer() {
                   >
                     {item.label}
                   </Link>
-                  {item.href === "/herramientas" ? (
-                    <ul className="mt-1.5 space-y-1">
-                      {TOOLS_FREE.map((tool) => (
-                        <li key={tool.domain}>
-                          <Link
-                            href={tool.href}
-                            className="flex items-center gap-1.5 text-xs text-r-warm/45 no-underline transition-colors hover:text-r-warm/70"
-                          >
-                            <span className="text-r-lime/50" aria-hidden="true">—</span>
-                            {tool.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
+                  {item.href === "/herramientas" ? null : (
                     <p className="mt-0.5 text-[0.7rem] font-medium text-r-lime/60">
                       {item.sublabel}
                     </p>
