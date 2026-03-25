@@ -81,7 +81,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-24 md:py-32 lg:py-40">
+      <section className="bg-r-dark py-16 md:py-24 lg:py-28">
         <div className="container-site">
           <div className="max-w-[880px]">
             <p className="label-tag mb-6 text-r-warm/50">

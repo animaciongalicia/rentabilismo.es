@@ -68,7 +68,7 @@ export default function EmpiezaAquiPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-green py-20 md:py-28">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Orientación</p>
           <h1 className="font-display text-display-xl text-r-white">

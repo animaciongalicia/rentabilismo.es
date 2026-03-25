@@ -10,9 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         r: {
-          dark:       "#1C3A22",  // verde bosque oscuro — texto principal y fondos hero
-          green:      "#1F5438",  // verde bosque medio — botones, accents, secciones CTA
-          "green-2":  "#2D7050",  // verde medio-claro — hover, variantes
+          dark:       "#1D1B17",  // carbón cálido oscuro — fondos hero y footer (sin verde)
+          green:      "#1B5C3C",  // verde medio — botones, accents, secciones CTA
+          "green-2":  "#2A7550",  // verde claro — hover, variantes
           lime:       "#8DC63F",  // verde lima — favicon, marca
           cream:      "#F5F2EB",  // crema cálida — fondo principal del body
           warm:       "#F1EEE7",  // crema levemente más oscura — secciones alternas (casi idéntica)

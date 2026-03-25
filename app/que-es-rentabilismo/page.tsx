@@ -51,7 +51,7 @@ export default function QueEsRentabilismoPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-24 md:py-32">
+      <section className="bg-r-dark py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Definición</p>
           <h1 className="font-display text-display-xl text-r-white">

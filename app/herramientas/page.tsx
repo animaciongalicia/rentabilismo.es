@@ -49,7 +49,7 @@ export default function HerramientasPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-24 md:py-32">
+      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Ecosistema Rentabilismo · Gratis</p>
           <h1 className="font-display text-display-xl text-r-white">

@@ -11,7 +11,7 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-r-border bg-r-cream">
-      <div className="container-site">
+      <div className="container-content">
         <nav className="flex h-16 items-center justify-between md:h-[4.75rem]">
 
           {/* Marca */}
@@ -75,7 +75,7 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <div className="border-t border-r-border bg-r-cream md:hidden">
-          <ul className="container-site flex flex-col py-4" role="list">
+          <ul className="container-content flex flex-col py-4" role="list">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link

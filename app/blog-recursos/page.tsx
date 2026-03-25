@@ -16,7 +16,7 @@ export default function BlogRecursosPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-24 md:py-32">
+      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[{ label: "Inicio", href: "/" }, { label: "Blog y contenidos" }]} />
           <p className="label-tag mb-4 text-r-warm/50">Recursos · {DOMAIN}</p>

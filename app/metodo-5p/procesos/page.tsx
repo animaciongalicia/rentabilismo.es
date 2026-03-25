@@ -23,7 +23,7 @@ export default function ProcesosPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-24 md:py-32">
+      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
