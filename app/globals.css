@@ -74,6 +74,11 @@
     @apply mx-auto w-full max-w-narrow px-5 sm:px-8 lg:px-10;
   }
 
+  /* Contenedor intermedio — páginas de herramientas y servicio (1000px) */
+  .container-content {
+    @apply mx-auto w-full max-w-mid px-5 sm:px-8 lg:px-12;
+  }
+
   /* Sección estándar */
   .section {
     @apply py-section;

@@ -29,20 +29,20 @@ const config: Config = {
       },
       fontSize: {
         // Escala tipográfica editorial
-        "display-xl": ["clamp(3rem,   6.5vw, 5.25rem)", { lineHeight: "1.08", letterSpacing: "-0.025em" }],
-        "display-lg": ["clamp(2rem,   4vw,   3.25rem)", { lineHeight: "1.15", letterSpacing: "-0.02em"  }],
-        "display-md": ["clamp(1.5rem, 3vw,   2.25rem)", { lineHeight: "1.2",  letterSpacing: "-0.01em"  }],
-        "display-sm": ["clamp(1.2rem, 2vw,   1.5rem)",  { lineHeight: "1.3",  letterSpacing: "-0.01em"  }],
+        "display-xl": ["clamp(2rem,   3.2vw, 2.75rem)",  { lineHeight: "1.15", letterSpacing: "-0.02em"  }],
+        "display-lg": ["clamp(1.75rem,2.6vw, 2.25rem)",  { lineHeight: "1.18", letterSpacing: "-0.015em" }],
+        "display-md": ["clamp(1.3rem, 1.8vw, 1.75rem)",  { lineHeight: "1.25", letterSpacing: "-0.01em"  }],
+        "display-sm": ["clamp(1.1rem, 1.3vw, 1.25rem)",  { lineHeight: "1.3",  letterSpacing: "-0.005em" }],
       },
       maxWidth: {
         prose:   "68ch",    // ancho óptimo para uso inline (max-w-prose)
         narrow:  "860px",   // columna editorial — prosa amplia en páginas internas
         wide:    "1200px",  // contenedor ancho para grids
-        mid:     "960px",   // contenedor medio
+        mid:     "1000px",  // contenedor intermedio — páginas de herramientas y servicio
       },
       spacing: {
-        section:      "6rem",   // padding vertical estándar de sección
-        "section-sm": "3.75rem",
+        section:      "5rem",   // padding vertical estándar de sección
+        "section-sm": "3rem",
       },
     },
   },

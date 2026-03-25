@@ -13,8 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/herramientas/diagnostico` },
   openGraph: {
     title: "Diagnóstico Empresarial — Identifica tu palanca bloqueada | Rentabilismo",
-    description:
-      "Herramienta gratuita para descubrir qué palanca del Método 5P limita la rentabilidad de tu negocio.",
+    description: "Herramienta gratuita para descubrir qué palanca del Método 5P limita la rentabilidad de tu negocio.",
     url: `${SITE_URL}/herramientas/diagnostico`,
   },
 };
@@ -23,72 +22,55 @@ export default function DiagnosticoPage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-prose">
+      <section className="bg-r-dark py-12 sm:py-16 md:py-20">
+        <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Herramientas", href: "/herramientas" },
             { label: "Diagnóstico Empresarial" },
           ]} />
-          <p className="label-tag mb-4 text-r-warm/50">{TOOL.tag} · {TOOL.domain}</p>
-          <h1 className="font-display text-display-xl text-r-white">
+          <p className="label-tag mt-6 mb-3 text-r-warm/50">{TOOL.tag} · {TOOL.domain}</p>
+          <h1 className="font-display text-display-xl text-r-white max-w-xl">
             Diagnóstico Empresarial
           </h1>
-          <p className="mt-5 text-xl leading-relaxed text-r-warm/75">
+          <p className="mt-4 max-w-lg text-base leading-relaxed text-r-warm/70">
             Saber qué está fallando es la mitad del trabajo. La otra mitad es saber en qué orden arreglarlo.
           </p>
-          <div className="mt-8">
-            <a
-              href={TOOL.externalHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-r-lime px-7 py-3.5 text-sm font-semibold text-r-dark no-underline hover:bg-r-lime/90 transition-colors"
-            >
-              Hacer el diagnóstico gratis ↗
-            </a>
-          </div>
+          <a
+            href={TOOL.externalHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-7 inline-flex items-center gap-2 bg-r-lime px-6 py-3 text-sm font-semibold text-r-dark no-underline hover:bg-r-lime/90 transition-colors"
+          >
+            Hacer el diagnóstico gratis ↗
+          </a>
         </div>
       </section>
 
-      {/* ── QUÉ ES ── */}
-      <section className="section bg-r-white">
-        <div className="container-prose">
-          <h2 className="font-display text-display-md text-r-dark">
-            Un análisis estructurado de las cinco palancas de tu negocio
-          </h2>
-          <p className="mt-5 text-r-dark/80 leading-relaxed">
-            Cuestionario guiado que analiza tu negocio desde las cinco dimensiones del Método 5P.
-            Identifica cuál está más bloqueada y cuál tiene mayor impacto potencial si se trabaja.
-          </p>
-          <ul className="mt-6 space-y-3">
-            {[
-              "Puntuación de tu negocio en las cinco palancas.",
-              "Palanca prioritaria y patrón de bloqueo específico.",
-              "Tres acciones concretas ordenadas por impacto.",
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-r-lime" />
-                <span className="text-r-dark/80">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* ── CÓMO FUNCIONA ── */}
+      {/* ── CONTENIDO ── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
-          <p className="label-tag mb-6">El proceso</p>
-          <div className="grid gap-5 sm:grid-cols-3">
+        <div className="container-content">
+          <div className="max-w-2xl mb-10">
+            <h2 className="font-display text-display-md text-r-dark">
+              Un análisis estructurado de las cinco palancas de tu negocio
+            </h2>
+            <p className="mt-4 text-r-dark/75 leading-relaxed">
+              Cuestionario guiado que analiza tu negocio desde las cinco dimensiones del Método 5P.
+              Identifica cuál está más bloqueada y cuál tiene mayor impacto si se trabaja.
+              El resultado no es genérico: es específico a tu situación, con acciones ordenadas por prioridad.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-3">
             {[
-              { num: "01", title: "Respondes", desc: "12-15 minutos. Preguntas directas sobre cómo funciona tu negocio ahora." },
-              { num: "02", title: "El sistema analiza", desc: "Se cruzan tus respuestas con el modelo 5P y se puntúa cada palanca." },
-              { num: "03", title: "Recibes el informe", desc: "Palanca prioritaria, señales de alerta y tres acciones concretas." },
+              { num: "01", title: "Respondes", desc: "12-15 minutos. Preguntas directas sobre cómo funciona tu negocio ahora. Cuanto más honesto, más útil el resultado." },
+              { num: "02", title: "El sistema analiza", desc: "Tus respuestas se cruzan con el modelo 5P. Se puntúa cada palanca y se identifica el patrón de bloqueo." },
+              { num: "03", title: "Recibes el informe", desc: "Palanca prioritaria, señales de alerta y tres acciones concretas ordenadas por impacto estimado." },
             ].map((paso) => (
-              <div key={paso.num} className="card">
+              <div key={paso.num} className="border border-r-border bg-r-white p-6">
                 <p className="text-xs font-semibold tracking-widest text-r-muted/50 mb-3">{paso.num}</p>
                 <h3 className="font-display text-display-sm text-r-dark mb-2">{paso.title}</h3>
-                <p className="text-sm text-r-dark/75 leading-relaxed">{paso.desc}</p>
+                <p className="text-sm text-r-dark/70 leading-relaxed">{paso.desc}</p>
               </div>
             ))}
           </div>
@@ -96,19 +78,17 @@ export default function DiagnosticoPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="section bg-r-green">
-        <div className="container-prose">
-          <h2 className="font-display text-display-md text-r-white mb-3">
-            Menos de 15 minutos. Completamente gratuito.
-          </h2>
-          <p className="text-r-warm/70 mb-7">
-            Sin registro. Sin compromiso. Solo un análisis honesto de en qué punto está tu negocio.
-          </p>
+      <section className="section-sm bg-r-green">
+        <div className="container-content flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div>
+            <p className="font-display text-display-sm text-r-white">Menos de 15 minutos. Completamente gratuito.</p>
+            <p className="mt-1 text-sm text-r-warm/65">Sin registro. Sin compromiso. Accede directamente.</p>
+          </div>
           <a
             href={TOOL.externalHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-r-lime px-7 py-3.5 text-sm font-semibold text-r-dark no-underline hover:bg-r-lime/90 transition-colors"
+            className="shrink-0 inline-flex items-center gap-2 bg-r-lime px-6 py-3 text-sm font-semibold text-r-dark no-underline hover:bg-r-lime/90 transition-colors"
           >
             Acceder a {TOOL.domain} ↗
           </a>
@@ -117,16 +97,16 @@ export default function DiagnosticoPage() {
 
       {/* ── OTRAS HERRAMIENTAS ── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Otras herramientas gratuitas</p>
           <div className="grid grid-cols-1 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-2">
             {OTHER_TOOLS.map((tool) => (
               <Link
                 key={tool.href}
                 href={tool.href}
-                className="flex flex-col gap-1 bg-r-dark px-5 py-5 no-underline transition-colors hover:bg-r-green"
+                className="flex flex-col gap-1 bg-r-dark px-5 py-4 no-underline transition-colors hover:bg-r-green"
               >
-                <span className="text-xs font-semibold tracking-widest text-r-warm/50">{tool.num} — {tool.domain}</span>
+                <span className="text-xs font-semibold tracking-widest text-r-warm/45">{tool.num} — {tool.domain}</span>
                 <span className="font-body font-semibold text-r-white">{tool.name}</span>
                 <span className="text-xs text-r-warm/50 mt-0.5">{tool.tagline}</span>
               </Link>
