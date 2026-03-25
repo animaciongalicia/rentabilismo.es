@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV_LINKS, ECOSYSTEM_LINKS, METODO_5P_LINKS, SITE_NAME } from "@/lib/siteConfig";
+import { NAV_LINKS, ECOSYSTEM_LINKS, METODO_5P_LINKS, TOOLS_FREE, SITE_NAME } from "@/lib/siteConfig";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -50,6 +50,14 @@ export default function Footer() {
               Método 5P
             </p>
             <ul className="space-y-2.5" role="list">
+              <li>
+                <Link
+                  href="/metodo-5p"
+                  className="text-sm text-r-warm/75 no-underline transition-colors hover:text-r-white"
+                >
+                  El método
+                </Link>
+              </li>
               {METODO_5P_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -78,12 +86,25 @@ export default function Footer() {
                   >
                     {item.label}
                   </Link>
-                  <p className="mt-0.5 text-[0.7rem] font-medium text-r-lime/60">
-                    {item.sublabel}
-                  </p>
-                  <p className="mt-0.5 text-xs text-r-warm/45">
-                    {item.description}
-                  </p>
+                  {item.href === "/herramientas" ? (
+                    <ul className="mt-1.5 space-y-1">
+                      {TOOLS_FREE.map((tool) => (
+                        <li key={tool.domain}>
+                          <Link
+                            href={tool.href}
+                            className="flex items-center gap-1.5 text-xs text-r-warm/45 no-underline transition-colors hover:text-r-warm/70"
+                          >
+                            <span className="text-r-lime/50" aria-hidden="true">—</span>
+                            {tool.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="mt-0.5 text-[0.7rem] font-medium text-r-lime/60">
+                      {item.sublabel}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>

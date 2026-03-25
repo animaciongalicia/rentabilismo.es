@@ -5,7 +5,6 @@ export const SITE_DESCRIPTION =
 
 export const NAV_LINKS = [
   { label: "Qué es",       href: "/que-es-rentabilismo" },
-  { label: "Método 5P",    href: "/metodo-5p" },
   { label: "Manifiesto",   href: "/manifiesto" },
   { label: "Filosofía",    href: "/filosofia" },
   { label: "Diccionario",  href: "/diccionario" },
