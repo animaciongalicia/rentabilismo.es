@@ -17,7 +17,7 @@ export default function BlogRecursosPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-prose">
+        <div className="container-content">
           <Breadcrumb items={[{ label: "Inicio", href: "/" }, { label: "Blog y contenidos" }]} />
           <p className="label-tag mb-4 text-r-warm/50">Recursos · {DOMAIN}</p>
           <h1 className="font-display text-display-xl text-r-white">
@@ -42,7 +42,7 @@ export default function BlogRecursosPage() {
 
       {/* ── QUÉ ES ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué es</p>
           <h2 className="font-display text-display-md text-r-dark">
             Una publicación editorial especializada en rentabilidad empresarial real
@@ -64,7 +64,7 @@ export default function BlogRecursosPage() {
 
       {/* ── QUÉ ENCONTRARÁS ──────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué encontrarás</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cuatro tipos de contenido
@@ -88,7 +88,7 @@ export default function BlogRecursosPage() {
 
       {/* ── PARA QUIÉN ───────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Para quién es</p>
           <h2 className="font-display text-display-md text-r-dark mb-6">
             Quién aprovecha más este contenido
@@ -110,7 +110,7 @@ export default function BlogRecursosPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-3 text-r-warm/50">{DOMAIN}</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Empieza a leer

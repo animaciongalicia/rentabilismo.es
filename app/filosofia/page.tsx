@@ -99,7 +99,7 @@ export default function FilosofiaPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Los principios del sistema</p>
           <h1 className="font-display text-display-xl text-r-white">
             Filosofía<br />Rentabilista
@@ -129,7 +129,7 @@ export default function FilosofiaPage() {
 
       {/* ── ÍNDICE RÁPIDO ─────────────────────────────────────────────────── */}
       <section className="section-sm bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-5">
             {PRINCIPIOS.map((p) => (
               <a
@@ -154,7 +154,7 @@ export default function FilosofiaPage() {
           id={p.id}
           className={`section ${i % 2 === 0 ? "bg-r-cream" : "bg-r-white"}`}
         >
-          <div className="container-site">
+          <div className="container-content">
             <div className="grid gap-10 md:grid-cols-[220px_1fr] md:gap-16 lg:gap-20">
 
               {/* Número grande */}

@@ -24,7 +24,7 @@ export default function PreciosPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Método 5P", href: "/metodo-5p" },
@@ -43,7 +43,7 @@ export default function PreciosPage() {
 
       {/* ── POR QUÉ LOS PRECIOS SON EL PROBLEMA MÁS COMÚN ────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El origen del problema</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué la mayoría de los negocios tienen precios incorrectos
@@ -76,7 +76,7 @@ export default function PreciosPage() {
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué mira Rentabilismo en Precios</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan si tus precios funcionan
@@ -137,7 +137,7 @@ export default function PreciosPage() {
 
       {/* ── EL MIEDO A SUBIR PRECIOS ──────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">La conversación que nadie quiere tener</p>
           <h2 className="font-display text-display-md text-r-dark">
             El miedo a subir precios
@@ -173,7 +173,7 @@ export default function PreciosPage() {
 
       {/* ── LA TRAMPA DEL PRECIO COMPETITIVO ─────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El error de estrategia</p>
           <h2 className="font-display text-display-md text-r-dark">
             La trampa del precio competitivo
@@ -204,7 +204,7 @@ export default function PreciosPage() {
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Precios es tu palanca bloqueada
@@ -229,7 +229,7 @@ export default function PreciosPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si tus precios no generan margen real, hay que revisarlos ya
@@ -247,7 +247,7 @@ export default function PreciosPage() {
 
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Las cinco palancas del sistema</p>
           <div className="grid grid-cols-2 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => {

@@ -17,7 +17,7 @@ export default function ConsultoriaPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-prose">
+        <div className="container-content">
           <Breadcrumb items={[{ label: "Inicio", href: "/" }, { label: "Consultoría presencial" }]} />
           <p className="label-tag mb-4 text-r-warm/50">Servicio presencial · {DOMAIN}</p>
           <h1 className="font-display text-display-xl text-r-white">
@@ -42,7 +42,7 @@ export default function ConsultoriaPage() {
 
       {/* ── CÓMO FUNCIONA ────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Cómo funciona</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cuatro fases de trabajo
@@ -82,7 +82,7 @@ export default function ConsultoriaPage() {
 
       {/* ── PARA QUIÉN ───────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Para quién es</p>
           <h2 className="font-display text-display-md text-r-dark mb-6">
             Cuándo tiene sentido este servicio
@@ -109,7 +109,7 @@ export default function ConsultoriaPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-3 text-r-warm/50">Primera conversación sin compromiso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Una llamada para ver si encajamos

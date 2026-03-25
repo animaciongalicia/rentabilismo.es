@@ -52,7 +52,7 @@ export default function QueEsRentabilismoPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Definición</p>
           <h1 className="font-display text-display-xl text-r-white">
             Qué es Rentabilismo
@@ -67,7 +67,7 @@ export default function QueEsRentabilismoPage() {
 
       {/* ── DEFINICIÓN DIRECTA ────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">La definición sin adornos</p>
           <h2 className="font-display text-display-md text-r-dark">
             Qué es Rentabilismo, exactamente
@@ -102,7 +102,7 @@ export default function QueEsRentabilismoPage() {
 
       {/* ── POR QUÉ NACE ──────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El origen</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué nace este sistema
@@ -135,7 +135,7 @@ export default function QueEsRentabilismoPage() {
 
       {/* ── QUÉ PROBLEMA RESUELVE ─────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El problema que resuelve</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué tantos negocios trabajan mucho y mejoran poco
@@ -170,7 +170,7 @@ export default function QueEsRentabilismoPage() {
 
       {/* ── NO VA DE HACER MÁS ────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El enfoque</p>
           <h2 className="font-display text-display-md text-r-dark">
             No va de hacer más. Va de pensar mejor.
@@ -197,7 +197,7 @@ export default function QueEsRentabilismoPage() {
 
       {/* ── LAS DIFERENCIAS ────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Las diferencias</p>
           <h2 className="font-display text-display-md text-r-dark">
             Rentabilismo frente a lo que ya conoces
@@ -227,7 +227,7 @@ export default function QueEsRentabilismoPage() {
 
       {/* ── QUÉ CAMBIA ────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Lo que cambia</p>
           <h2 className="font-display text-display-md text-r-white">
             Qué ocurre cuando el sistema se aplica

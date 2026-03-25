@@ -69,7 +69,7 @@ export default function Metodo5PPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El corazón del sistema</p>
           <h1 className="font-display text-display-xl text-r-white">
             El Método 5P
@@ -84,7 +84,7 @@ export default function Metodo5PPage() {
 
       {/* ── POR QUÉ UN MÉTODO ─────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Por qué un método</p>
           <h2 className="font-display text-display-md text-r-dark">
             Un sistema, no una lista de consejos
@@ -119,7 +119,7 @@ export default function Metodo5PPage() {
 
       {/* ── CÓMO SE RELACIONAN ────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">La conexión</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué si falla una, sufren todas
@@ -163,7 +163,7 @@ export default function Metodo5PPage() {
 
       {/* ── LAS 5P ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-2">Las cinco palancas</p>
           <div className="divide-y divide-r-border">
             {RESUMEN_5P.map((p) => (
@@ -208,7 +208,7 @@ export default function Metodo5PPage() {
 
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-6 text-r-warm/50">Ir directamente a</p>
           <div className="grid gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => (
@@ -229,7 +229,7 @@ export default function Metodo5PPage() {
 
       {/* ── CIERRE ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="font-display text-display-md text-r-white">
             El primer paso no es aplicar todas las palancas. Es saber cuál
             está fallando en tu caso.

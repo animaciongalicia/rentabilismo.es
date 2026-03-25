@@ -24,7 +24,7 @@ export default function ProcesosPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Método 5P", href: "/metodo-5p" },
@@ -43,7 +43,7 @@ export default function ProcesosPage() {
 
       {/* ── POR QUÉ LOS PROCESOS SON LA BASE ─────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">La base de la escalabilidad</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué los procesos son lo que hace crecer un negocio sin romperse
@@ -75,7 +75,7 @@ export default function ProcesosPage() {
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué mira Rentabilismo en Procesos</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan el estado real de tus sistemas
@@ -137,7 +137,7 @@ export default function ProcesosPage() {
 
       {/* ── EJEMPLO CONCRETO ─────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Un caso real</p>
           <h2 className="font-display text-display-md text-r-dark">
             Documentar el onboarding de clientes: qué cambia
@@ -175,7 +175,7 @@ export default function ProcesosPage() {
 
       {/* ── PRIMERO DOCUMENTA, LUEGO AUTOMATIZA ──────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El orden correcto</p>
           <h2 className="font-display text-display-md text-r-dark">
             Primero documenta, luego automatiza
@@ -205,7 +205,7 @@ export default function ProcesosPage() {
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Procesos es tu palanca bloqueada
@@ -230,7 +230,7 @@ export default function ProcesosPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si tu negocio depende de que estés tú, Procesos es tu palanca
@@ -248,7 +248,7 @@ export default function ProcesosPage() {
 
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Las cinco palancas del sistema</p>
           <div className="grid grid-cols-2 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => {

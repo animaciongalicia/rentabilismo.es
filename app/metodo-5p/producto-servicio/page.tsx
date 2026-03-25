@@ -24,7 +24,7 @@ export default function ProductoServicioPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Método 5P", href: "/metodo-5p" },
@@ -42,7 +42,7 @@ export default function ProductoServicioPage() {
 
       {/* ── POR QUÉ VA ANTES QUE MARKETING ───────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Por qué Producto/Servicio va antes que Marketing</p>
           <h2 className="font-display text-display-md text-r-dark">
             Antes de promocionar, tienes que saber qué vendes
@@ -71,7 +71,7 @@ export default function ProductoServicioPage() {
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué mira Rentabilismo en Producto/Servicio</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan el estado real de tu oferta
@@ -132,7 +132,7 @@ export default function ProductoServicioPage() {
 
       {/* ── EJEMPLO CONCRETO ─────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Un caso real</p>
           <h2 className="font-display text-display-md text-r-dark">
             Cuando reducir la oferta aumenta el margen
@@ -167,7 +167,7 @@ export default function ProductoServicioPage() {
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Producto/Servicio es tu palanca bloqueada
@@ -192,7 +192,7 @@ export default function ProductoServicioPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si tu oferta no está clara, todo lo demás cuesta más
@@ -210,7 +210,7 @@ export default function ProductoServicioPage() {
 
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Las cinco palancas del sistema</p>
           <div className="grid grid-cols-2 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => {

@@ -50,7 +50,7 @@ export default function HerramientasPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Ecosistema Rentabilismo · Gratis</p>
           <h1 className="font-display text-display-xl text-r-white">
             Tres herramientas para diagnosticar, conocer a tu cliente y validar ideas
@@ -63,7 +63,7 @@ export default function HerramientasPage() {
 
       {/* ── LAS 3 HERRAMIENTAS ────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-8 md:grid-cols-3">
             {TOOLS.map((tool) => (
               <div key={tool.num} className="card-accent flex flex-col gap-5">
@@ -125,7 +125,7 @@ export default function HerramientasPage() {
 
       {/* ── EL ECOSISTEMA ────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El ecosistema completo</p>
           <h2 className="font-display text-display-md text-r-dark mb-2">
             Para ir más lejos

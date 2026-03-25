@@ -89,7 +89,7 @@ export default function ParaQuienEsPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 md:py-28">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Los perfiles</p>
           <h1 className="font-display text-display-xl text-r-white">
             ¿Es Rentabilismo<br />para ti?
@@ -103,7 +103,7 @@ export default function ParaQuienEsPage() {
 
       {/* ── PARA QUIÉN NO ES ──────────────────────────────────────────────── */}
       <section className="section-sm bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Antes de seguir</p>
           <h2 className="font-display text-display-sm text-r-dark">
             Rentabilismo no es para todo el mundo
@@ -130,7 +130,7 @@ export default function ParaQuienEsPage() {
           id={perfil.id}
           className={`section ${i % 2 === 0 ? "bg-r-cream" : "bg-r-warm"}`}
         >
-          <div className="container-site">
+          <div className="container-content">
             <div className="grid gap-10 md:grid-cols-[auto_1fr] md:gap-14">
 
               {/* Indicador */}
@@ -202,7 +202,7 @@ export default function ParaQuienEsPage() {
 
       {/* ── CIERRE ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="font-display text-display-md text-r-white">
             Si te has visto en alguno de estos tres perfiles, no necesitas
             más convencimiento. Solo necesitas empezar.

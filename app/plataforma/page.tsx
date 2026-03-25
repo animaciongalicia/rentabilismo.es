@@ -17,7 +17,7 @@ export default function PlataformaPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-prose">
+        <div className="container-content">
           <Breadcrumb items={[{ label: "Inicio", href: "/" }, { label: "Plataforma SaaS" }]} />
           <p className="label-tag mb-4 text-r-warm/50">Plataforma · {DOMAIN}</p>
           <h1 className="font-display text-display-xl text-r-white">
@@ -42,7 +42,7 @@ export default function PlataformaPage() {
 
       {/* ── QUÉ ES ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué es</p>
           <h2 className="font-display text-display-md text-r-dark">
             El Método 5P en un entorno digital estructurado
@@ -66,7 +66,7 @@ export default function PlataformaPage() {
 
       {/* ── QUÉ INCLUYE ──────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué incluye</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Diagnóstico + cinco módulos del Método 5P
@@ -92,7 +92,7 @@ export default function PlataformaPage() {
 
       {/* ── PARA QUIÉN ───────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Para quién es</p>
           <h2 className="font-display text-display-md text-r-dark mb-6">
             Encaja bien si reconoces alguna de estas situaciones
@@ -119,7 +119,7 @@ export default function PlataformaPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-3 text-r-warm/50">{DOMAIN}</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Empieza con el diagnóstico gratuito

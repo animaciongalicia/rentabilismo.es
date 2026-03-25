@@ -24,7 +24,7 @@ export default function PersonasPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Método 5P", href: "/metodo-5p" },
@@ -42,7 +42,7 @@ export default function PersonasPage() {
 
       {/* ── POR QUÉ ES LA PRIMERA ─────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Por qué Personas es la primera palanca</p>
           <h2 className="font-display text-display-md text-r-dark">
             El problema rara vez está donde crees
@@ -75,7 +75,7 @@ export default function PersonasPage() {
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué mira Rentabilismo en Personas</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco áreas concretas
@@ -132,7 +132,7 @@ export default function PersonasPage() {
 
       {/* ── EL ERROR MÁS CARO ─────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El caso más habitual</p>
           <h2 className="font-display text-display-md text-r-dark">
             El dueño que hace de todo
@@ -167,7 +167,7 @@ export default function PersonasPage() {
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Personas es tu palanca bloqueada
@@ -192,7 +192,7 @@ export default function PersonasPage() {
 
       {/* ── QUÉ CAMBIA ────────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El otro lado</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Qué cambia cuando Personas funciona bien
@@ -216,7 +216,7 @@ export default function PersonasPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si Personas es tu cuello de botella, hay que empezar por ahí
@@ -234,7 +234,7 @@ export default function PersonasPage() {
 
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Las cinco palancas del sistema</p>
           <div className="grid grid-cols-2 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => {

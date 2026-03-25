@@ -69,7 +69,7 @@ export default function EmpiezaAquiPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-20 md:py-28">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Orientación</p>
           <h1 className="font-display text-display-xl text-r-white">
             Empieza aquí
@@ -83,7 +83,7 @@ export default function EmpiezaAquiPage() {
 
       {/* ── PREGUNTA ORIENTADORA ──────────────────────────────────────────── */}
       <section className="section-sm bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <h2 className="font-display text-display-md text-r-dark">
             ¿Cuál es tu situación ahora mismo?
           </h2>
@@ -98,7 +98,7 @@ export default function EmpiezaAquiPage() {
 
       {/* ── LAS TRES RUTAS ────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site max-w-mid">
+        <div className="container-content">
           <div className="space-y-8">
             {RUTAS.map((ruta) => (
               <div key={ruta.id} id={ruta.id} className="card">
@@ -144,7 +144,7 @@ export default function EmpiezaAquiPage() {
 
       {/* ── TODAS LAS PÁGINAS ─────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-6">Todo el contenido disponible</p>
           <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-2 lg:grid-cols-3">
             {RECURSOS_RAPIDOS.map((r) => (
@@ -165,7 +165,7 @@ export default function EmpiezaAquiPage() {
 
       {/* ── LAS 5P RÁPIDO ─────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-6">El Método 5P — acceso directo</p>
           <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => (
@@ -186,7 +186,7 @@ export default function EmpiezaAquiPage() {
 
       {/* ── ECOSISTEMA ────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-6 text-r-warm/50">Más allá de esta web</p>
           <h2 className="font-display text-display-md text-r-white">
             El ecosistema Rentabilismo

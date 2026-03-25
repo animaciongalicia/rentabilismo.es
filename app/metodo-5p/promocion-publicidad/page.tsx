@@ -24,7 +24,7 @@ export default function PromocionPublicidadPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 sm:py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Método 5P", href: "/metodo-5p" },
@@ -43,7 +43,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── POR QUÉ VA LA ÚLTIMA ──────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Por qué está aquí y no al principio</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué Promoción va la última
@@ -78,7 +78,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4">Qué mira Rentabilismo en Promoción/Publicidad</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan si tu promoción tiene sentido
@@ -140,7 +140,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── ATRAER VS PERSEGUIR ───────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">La diferencia que cambia todo</p>
           <h2 className="font-display text-display-md text-r-dark">
             La diferencia entre atraer y perseguir
@@ -178,7 +178,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Promoción es tu palanca bloqueada
@@ -203,7 +203,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── EL ERROR DE EMPEZAR POR AQUÍ ─────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4">El error más frecuente</p>
           <h2 className="font-display text-display-md text-r-dark">
             El error de empezar por Promoción
@@ -235,7 +235,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
             Antes de invertir en Promoción, comprueba que el resto funciona
@@ -254,7 +254,7 @@ export default function PromocionPublicidadPage() {
 
       {/* ── NAVEGACIÓN ENTRE LAS P ────────────────────────────────────────── */}
       <section className="section-sm bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Las cinco palancas del sistema</p>
           <div className="grid grid-cols-2 gap-px border border-r-border-d bg-r-border-d sm:grid-cols-5">
             {METODO_5P_LINKS.map((link) => {

@@ -96,7 +96,7 @@ export default function DiccionarioPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-20 md:py-28">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Vocabulario propio</p>
           <h1 className="font-display text-display-xl text-r-white">
             Diccionario<br />Rentabilista
@@ -110,7 +110,7 @@ export default function DiccionarioPage() {
 
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
       <section className="section-sm bg-r-white">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="label-tag mb-3">Por qué existe este diccionario</p>
           <div className="space-y-4 text-r-dark/85">
             <p>
@@ -134,7 +134,7 @@ export default function DiccionarioPage() {
 
       {/* ── LAYOUT: ÍNDICE + TÉRMINOS ─────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-12 md:grid-cols-[220px_1fr] md:gap-16 lg:grid-cols-[260px_1fr]">
 
             {/* Índice lateral */}

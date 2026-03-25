@@ -73,7 +73,7 @@ export default function ManifiestoPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-dark py-24 md:py-32">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Declaración de principios</p>
           <h1 className="font-display text-display-xl text-r-white">
             Manifiesto<br />Rentabilista
@@ -109,7 +109,7 @@ export default function ManifiestoPage() {
 
       {/* ── PRINCIPIOS ────────────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site max-w-mid">
+        <div className="container-content">
           <ol className="space-y-0" role="list">
             {PRINCIPIOS.map((p, i) => (
               <li
