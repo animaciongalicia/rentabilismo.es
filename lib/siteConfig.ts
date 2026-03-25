@@ -6,7 +6,6 @@ export const SITE_DESCRIPTION =
 export const NAV_LINKS = [
   { label: "Qué es",       href: "/que-es-rentabilismo" },
   { label: "Método 5P",    href: "/metodo-5p" },
-  { label: "Herramientas", href: "/herramientas" },
   { label: "Manifiesto",   href: "/manifiesto" },
   { label: "Filosofía",    href: "/filosofia" },
   { label: "Diccionario",  href: "/diccionario" },
@@ -57,14 +56,22 @@ export const TOOLS_FREE = [
   },
 ];
 
-// Ecosistema de plataformas y servicios
+// Ecosistema de plataformas y servicios (incluye herramientas gratuitas)
 export const ECOSYSTEM_LINKS = [
+  {
+    label:        "Herramientas gratuitas",
+    sublabel:     "rentabilismo.online · avatar · idea",
+    href:         "/herramientas",
+    externalHref: "",
+    description:  "Diagnóstico empresarial, cliente ideal y validación de ideas. Sin registro.",
+    tag:          "Gratis",
+  },
   {
     label:        "Plataforma SaaS",
     sublabel:     "rentabilismo.com",
     href:         "/plataforma",
     externalHref: "https://rentabilismo.com",
-    description:  "Consultoría guiada y herramientas online para aplicar el Método 5P en tu negocio.",
+    description:  "Consultoría guiada y herramientas online para aplicar el Método 5P.",
     tag:          "Plataforma",
   },
   {
