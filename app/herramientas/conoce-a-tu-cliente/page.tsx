@@ -22,7 +22,7 @@ export default function ConoceATuClientePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="bg-r-dark py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
@@ -30,10 +30,10 @@ export default function ConoceATuClientePage() {
             { label: "Avatar de Cliente Ideal" },
           ]} />
           <p className="label-tag mt-6 mb-3 text-r-warm/50">{TOOL.tag} · {TOOL.domain}</p>
-          <h1 className="font-display text-display-xl text-r-white max-w-xl">
+          <h1 className="font-display text-display-xl text-r-white">
             Avatar de Cliente Ideal
           </h1>
-          <p className="mt-4 max-w-lg text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Si no sabes exactamente a quién le vendes, no puedes escribir un mensaje que conecte ni fijar un precio que tenga sentido.
           </p>
           <a

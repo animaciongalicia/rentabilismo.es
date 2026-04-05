@@ -22,7 +22,7 @@ export default function DiagnosticoPage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="bg-r-dark py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
@@ -30,10 +30,10 @@ export default function DiagnosticoPage() {
             { label: "Diagnóstico Empresarial" },
           ]} />
           <p className="label-tag mt-6 mb-3 text-r-warm/50">{TOOL.tag} · {TOOL.domain}</p>
-          <h1 className="font-display text-display-xl text-r-white max-w-xl">
+          <h1 className="font-display text-display-xl text-r-white">
             Diagnóstico Empresarial
           </h1>
-          <p className="mt-4 max-w-lg text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Saber qué está fallando es la mitad del trabajo. La otra mitad es saber en qué orden arreglarlo.
           </p>
           <a

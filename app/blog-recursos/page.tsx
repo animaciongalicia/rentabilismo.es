@@ -16,14 +16,14 @@ export default function BlogRecursosPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[{ label: "Inicio", href: "/" }, { label: "Blog y contenidos" }]} />
           <p className="label-tag mb-4 text-r-warm/50">Recursos · {DOMAIN}</p>
           <h1 className="font-display text-display-xl text-r-white">
             Blog y contenidos sobre rentabilidad empresarial
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-r-warm/70 leading-relaxed">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Análisis honestos, casos reales y recursos concretos. El criterio
             editorial es uno: ¿puedes aplicar esto en tu negocio esta semana?
           </p>

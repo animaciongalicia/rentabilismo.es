@@ -22,7 +22,7 @@ export default function ValidaTuIdeaPage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="bg-r-dark py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
@@ -30,10 +30,10 @@ export default function ValidaTuIdeaPage() {
             { label: "Validador de Ideas" },
           ]} />
           <p className="label-tag mt-6 mb-3 text-r-warm/50">{TOOL.tag} · {TOOL.domain}</p>
-          <h1 className="font-display text-display-xl text-r-white max-w-xl">
+          <h1 className="font-display text-display-xl text-r-white">
             Validador de Ideas
           </h1>
-          <p className="mt-4 max-w-lg text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Una idea que parece buena no es lo mismo que una idea que tiene mercado.
             Saber la diferencia antes de invertir es la decisión más rentable que puedes tomar.
           </p>

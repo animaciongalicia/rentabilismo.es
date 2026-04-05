@@ -16,14 +16,14 @@ export default function ConsultoriaPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[{ label: "Inicio", href: "/" }, { label: "Consultoría presencial" }]} />
           <p className="label-tag mb-4 text-r-warm/50">Servicio presencial · {DOMAIN}</p>
           <h1 className="font-display text-display-xl text-r-white">
             Consultoría de mejora empresarial en A Coruña
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-r-warm/70 leading-relaxed">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Trabajo directo con el empresario. En su negocio. Con sus números reales.
             Sin informes de 80 páginas que nadie implementa.
           </p>

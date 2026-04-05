@@ -72,13 +72,13 @@ export default function ManifiestoPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">Declaración de principios</p>
           <h1 className="font-display text-display-xl text-r-white">
             Manifiesto<br />Rentabilista
           </h1>
-          <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/75">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Esto no es motivación. No hay metáforas de vuelos ni referencias
             al éxito de otros. Es una declaración de lo que creemos sobre los
             negocios, el trabajo y la rentabilidad.

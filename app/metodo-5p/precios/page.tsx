@@ -23,7 +23,7 @@ export default function PreciosPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
@@ -34,7 +34,7 @@ export default function PreciosPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Precios
           </h1>
-          <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/75">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             El precio correcto no es el más bajo. Es el que cubre tus costes
             reales y refleja el valor que entregas.
           </p>

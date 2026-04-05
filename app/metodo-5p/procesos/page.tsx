@@ -23,7 +23,7 @@ export default function ProcesosPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-r-dark py-20 sm:py-12 sm:py-16 md:py-20">
+      <section className="bg-r-green py-12 sm:py-16 md:py-20">
         <div className="container-content">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
@@ -34,7 +34,7 @@ export default function ProcesosPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Procesos
           </h1>
-          <p className="mt-6 max-w-2xl text-xl leading-relaxed text-r-warm/75">
+          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Un negocio que solo funciona cuando tú estás encima no está
             construido. Está improvisado.
           </p>
