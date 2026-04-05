@@ -42,9 +42,8 @@ export default function PreciosPage() {
       </section>
 
       {/* ── POR QUÉ LOS PRECIOS SON EL PROBLEMA MÁS COMÚN ────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">El origen del problema</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué la mayoría de los negocios tienen precios incorrectos
           </h2>
@@ -75,9 +74,8 @@ export default function PreciosPage() {
       </section>
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Qué mira Rentabilismo en Precios</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan si tus precios funcionan
           </h2>
@@ -138,7 +136,6 @@ export default function PreciosPage() {
       {/* ── EL MIEDO A SUBIR PRECIOS ──────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">La conversación que nadie quiere tener</p>
           <h2 className="font-display text-display-md text-r-dark">
             El miedo a subir precios
           </h2>
@@ -172,9 +169,8 @@ export default function PreciosPage() {
       </section>
 
       {/* ── LA TRAMPA DEL PRECIO COMPETITIVO ─────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">El error de estrategia</p>
           <h2 className="font-display text-display-md text-r-dark">
             La trampa del precio competitivo
           </h2>
@@ -203,9 +199,8 @@ export default function PreciosPage() {
       </section>
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Precios es tu palanca bloqueada
           </h2>
@@ -228,7 +223,7 @@ export default function PreciosPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-green">
+      <section className="section-sm bg-r-green">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">

@@ -41,9 +41,8 @@ export default function ProductoServicioPage() {
       </section>
 
       {/* ── POR QUÉ VA ANTES QUE MARKETING ───────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Por qué Producto/Servicio va antes que Marketing</p>
           <h2 className="font-display text-display-md text-r-dark">
             Antes de promocionar, tienes que saber qué vendes
           </h2>
@@ -70,9 +69,8 @@ export default function ProductoServicioPage() {
       </section>
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Qué mira Rentabilismo en Producto/Servicio</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan el estado real de tu oferta
           </h2>
@@ -133,7 +131,6 @@ export default function ProductoServicioPage() {
       {/* ── EJEMPLO CONCRETO ─────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Un caso real</p>
           <h2 className="font-display text-display-md text-r-dark">
             Cuando reducir la oferta aumenta el margen
           </h2>
@@ -166,9 +163,8 @@ export default function ProductoServicioPage() {
       </section>
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Producto/Servicio es tu palanca bloqueada
           </h2>
@@ -191,7 +187,7 @@ export default function ProductoServicioPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-green">
+      <section className="section-sm bg-r-green">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">

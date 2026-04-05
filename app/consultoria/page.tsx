@@ -41,7 +41,7 @@ export default function ConsultoriaPage() {
       </section>
 
       {/* ── CÓMO FUNCIONA ────────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Cómo funciona</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
@@ -81,7 +81,7 @@ export default function ConsultoriaPage() {
       </section>
 
       {/* ── PARA QUIÉN ───────────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Para quién es</p>
           <h2 className="font-display text-display-md text-r-dark mb-6">

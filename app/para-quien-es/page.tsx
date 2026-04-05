@@ -102,7 +102,7 @@ export default function ParaQuienEsPage() {
       </section>
 
       {/* ── PARA QUIÉN NO ES ──────────────────────────────────────────────── */}
-      <section className="section-sm bg-r-white">
+      <section className="section-sm bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Antes de seguir</p>
           <h2 className="font-display text-display-sm text-r-dark">

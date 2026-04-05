@@ -112,8 +112,8 @@ export default function FilosofiaPage() {
       </section>
 
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
-      <section className="section-sm bg-r-white">
-        <div className="container-prose">
+      <section className="section-sm bg-r-cream">
+        <div className="container-content">
           <p className="text-r-dark/85">
             Antes de método, hay filosofía. Antes de herramientas, hay criterio.
             Rentabilismo se apoya en cinco principios que determinan cómo se
@@ -128,7 +128,7 @@ export default function FilosofiaPage() {
       </section>
 
       {/* ── ÍNDICE RÁPIDO ─────────────────────────────────────────────────── */}
-      <section className="section-sm bg-r-warm">
+      <section className="section-sm bg-r-cream">
         <div className="container-content">
           <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-5">
             {PRINCIPIOS.map((p) => (
@@ -152,7 +152,7 @@ export default function FilosofiaPage() {
         <section
           key={p.id}
           id={p.id}
-          className={`section ${i % 2 === 0 ? "bg-r-cream" : "bg-r-white"}`}
+          className={`section ${"bg-r-cream"}`}
         >
           <div className="container-content">
             <div className="grid gap-10 md:grid-cols-[220px_1fr] md:gap-16 lg:gap-20">
@@ -198,7 +198,7 @@ export default function FilosofiaPage() {
 
       {/* ── CIERRE ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="font-display text-display-md text-r-white">
             La filosofía sin método es intención. El método sin filosofía
             es técnica vacía. Los dos juntos son lo que hace funcionar

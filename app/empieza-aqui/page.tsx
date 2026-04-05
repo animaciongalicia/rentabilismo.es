@@ -82,7 +82,7 @@ export default function EmpiezaAquiPage() {
       </section>
 
       {/* ── PREGUNTA ORIENTADORA ──────────────────────────────────────────── */}
-      <section className="section-sm bg-r-white">
+      <section className="section-sm bg-r-cream">
         <div className="container-content">
           <h2 className="font-display text-display-md text-r-dark">
             ¿Cuál es tu situación ahora mismo?
@@ -143,7 +143,7 @@ export default function EmpiezaAquiPage() {
       </section>
 
       {/* ── TODAS LAS PÁGINAS ─────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-6">Todo el contenido disponible</p>
           <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-2 lg:grid-cols-3">
@@ -164,7 +164,7 @@ export default function EmpiezaAquiPage() {
       </section>
 
       {/* ── LAS 5P RÁPIDO ─────────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-6">El Método 5P — acceso directo</p>
           <div className="grid gap-px border border-r-border bg-r-border sm:grid-cols-5">

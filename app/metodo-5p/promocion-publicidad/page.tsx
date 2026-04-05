@@ -42,9 +42,8 @@ export default function PromocionPublicidadPage() {
       </section>
 
       {/* ── POR QUÉ VA LA ÚLTIMA ──────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Por qué está aquí y no al principio</p>
           <h2 className="font-display text-display-md text-r-dark">
             Por qué Promoción va la última
           </h2>
@@ -77,9 +76,8 @@ export default function PromocionPublicidadPage() {
       </section>
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Qué mira Rentabilismo en Promoción/Publicidad</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco preguntas que revelan si tu promoción tiene sentido
           </h2>
@@ -141,7 +139,6 @@ export default function PromocionPublicidadPage() {
       {/* ── ATRAER VS PERSEGUIR ───────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">La diferencia que cambia todo</p>
           <h2 className="font-display text-display-md text-r-dark">
             La diferencia entre atraer y perseguir
           </h2>
@@ -177,9 +174,8 @@ export default function PromocionPublicidadPage() {
       </section>
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Promoción es tu palanca bloqueada
           </h2>
@@ -202,9 +198,8 @@ export default function PromocionPublicidadPage() {
       </section>
 
       {/* ── EL ERROR DE EMPEZAR POR AQUÍ ─────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">El error más frecuente</p>
           <h2 className="font-display text-display-md text-r-dark">
             El error de empezar por Promoción
           </h2>
@@ -234,7 +229,7 @@ export default function PromocionPublicidadPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-green">
+      <section className="section-sm bg-r-green">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">

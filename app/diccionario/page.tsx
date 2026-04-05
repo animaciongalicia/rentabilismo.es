@@ -109,7 +109,7 @@ export default function DiccionarioPage() {
       </section>
 
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
-      <section className="section-sm bg-r-white">
+      <section className="section-sm bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-3">Por qué existe este diccionario</p>
           <div className="space-y-4 text-r-dark/85">

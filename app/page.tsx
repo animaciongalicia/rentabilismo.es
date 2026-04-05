@@ -82,8 +82,8 @@ export default function HomePage() {
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-16 md:py-24 lg:py-28">
-        <div className="container-site">
-          <div className="max-w-[880px]">
+        <div className="container-content">
+
             <p className="label-tag mb-6 text-r-warm/50">
               Sistema · Método · Criterio
             </p>
@@ -104,13 +104,12 @@ export default function HomePage() {
                 Qué es esto
               </Button>
             </div>
-          </div>
         </div>
       </section>
 
       {/* ── EL PROBLEMA ───────────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
             <div>
               <p className="label-tag mb-3">El problema</p>
@@ -142,7 +141,7 @@ export default function HomePage() {
 
       {/* ── QUÉ ES / QUÉ NO ES ────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="label-tag mb-5">Qué es Rentabilismo</p>
@@ -194,7 +193,7 @@ export default function HomePage() {
 
       {/* ── MÉTODO 5P ──────────────────────────────────────────────────────── */}
       <section className="section bg-r-dark">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-12 md:grid-cols-2 md:items-end md:gap-16">
             <div>
               <p className="label-tag mb-4 text-r-warm/50">El corazón del sistema</p>
@@ -235,7 +234,7 @@ export default function HomePage() {
 
       {/* ── FILOSOFÍA / PILARES ────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
-        <div className="container-site">
+        <div className="container-content">
           <div className="grid gap-10 md:grid-cols-[280px_1fr] md:gap-16 lg:gap-20">
             <div>
               <p className="label-tag mb-3">La filosofía</p>
@@ -270,7 +269,7 @@ export default function HomePage() {
 
       {/* ── PARA QUIÉN ─────────────────────────────────────────────────────── */}
       <section className="section bg-r-white">
-        <div className="container-site">
+        <div className="container-content">
           <SectionHeader
             tag="Para quién es"
             title="Tres situaciones. Una misma necesidad."
@@ -286,7 +285,7 @@ export default function HomePage() {
 
       {/* ── ACCESO EDITORIAL ───────────────────────────────────────────────── */}
       <section className="section bg-r-warm">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-8">Profundiza en el sistema</p>
           <div className="grid gap-px border border-r-border bg-r-border md:grid-cols-3">
             {NAV_CARDS.map((card) => (
@@ -308,7 +307,7 @@ export default function HomePage() {
 
       {/* ── ECOSISTEMA ─────────────────────────────────────────────────────── */}
       <section className="section-sm bg-r-cream">
-        <div className="container-site">
+        <div className="container-content">
           <p className="label-tag mb-6">Ecosistema Rentabilismo</p>
           <div className="grid gap-6 sm:grid-cols-3">
             {[
@@ -343,7 +342,7 @@ export default function HomePage() {
 
       {/* ── CIERRE ─────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-site">
+        <div className="container-content">
           <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div className="max-w-xl">
               <p className="label-tag mb-4 text-r-warm/50">Sin atajos</p>

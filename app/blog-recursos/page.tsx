@@ -41,7 +41,7 @@ export default function BlogRecursosPage() {
       </section>
 
       {/* ── QUÉ ES ────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Qué es</p>
           <h2 className="font-display text-display-md text-r-dark">
@@ -63,7 +63,7 @@ export default function BlogRecursosPage() {
       </section>
 
       {/* ── QUÉ ENCONTRARÁS ──────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Qué encontrarás</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">

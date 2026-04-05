@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="border-t border-r-border bg-r-dark text-r-white">
 
       {/* Bloque principal */}
-      <div className="container-site py-14 md:py-16">
+      <div className="container-content py-14 md:py-16">
         <div className="grid gap-12 md:grid-cols-4 md:gap-8 lg:gap-12">
 
           {/* Columna 1 – Identidad */}
@@ -101,7 +101,7 @@ export default function Footer() {
 
       {/* Barra inferior */}
       <div className="border-t border-r-border-d">
-        <div className="container-site flex flex-col items-start gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="container-content flex flex-col items-start gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-r-warm/40">
             © {year} {SITE_NAME}. Todos los derechos reservados.
           </p>

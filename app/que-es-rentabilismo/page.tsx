@@ -66,7 +66,7 @@ export default function QueEsRentabilismoPage() {
       </section>
 
       {/* ── DEFINICIÓN DIRECTA ────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">La definición sin adornos</p>
           <h2 className="font-display text-display-md text-r-dark">
@@ -101,7 +101,7 @@ export default function QueEsRentabilismoPage() {
       </section>
 
       {/* ── POR QUÉ NACE ──────────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">El origen</p>
           <h2 className="font-display text-display-md text-r-dark">
@@ -169,7 +169,7 @@ export default function QueEsRentabilismoPage() {
       </section>
 
       {/* ── NO VA DE HACER MÁS ────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">El enfoque</p>
           <h2 className="font-display text-display-md text-r-dark">
@@ -196,7 +196,7 @@ export default function QueEsRentabilismoPage() {
       </section>
 
       {/* ── LAS DIFERENCIAS ────────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Las diferencias</p>
           <h2 className="font-display text-display-md text-r-dark">

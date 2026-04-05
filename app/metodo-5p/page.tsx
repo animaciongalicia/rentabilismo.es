@@ -83,7 +83,7 @@ export default function Metodo5PPage() {
       </section>
 
       {/* ── POR QUÉ UN MÉTODO ─────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">Por qué un método</p>
           <h2 className="font-display text-display-md text-r-dark">
@@ -118,7 +118,7 @@ export default function Metodo5PPage() {
       </section>
 
       {/* ── CÓMO SE RELACIONAN ────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">La conexión</p>
           <h2 className="font-display text-display-md text-r-dark">

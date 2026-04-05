@@ -87,7 +87,7 @@ export default function ManifiestoPage() {
       </section>
 
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
-      <section className="section-sm bg-r-white">
+      <section className="section-sm bg-r-cream">
         <div className="container-prose">
           <p className="text-lg leading-relaxed text-r-dark">
             Creemos en los negocios reales. No en los ideales de las

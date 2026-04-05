@@ -41,9 +41,8 @@ export default function PersonasPage() {
       </section>
 
       {/* ── POR QUÉ ES LA PRIMERA ─────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Por qué Personas es la primera palanca</p>
           <h2 className="font-display text-display-md text-r-dark">
             El problema rara vez está donde crees
           </h2>
@@ -74,9 +73,8 @@ export default function PersonasPage() {
       </section>
 
       {/* ── QUÉ MIRA RENTABILISMO ─────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Qué mira Rentabilismo en Personas</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Cinco áreas concretas
           </h2>
@@ -133,7 +131,6 @@ export default function PersonasPage() {
       {/* ── EL ERROR MÁS CARO ─────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">El caso más habitual</p>
           <h2 className="font-display text-display-md text-r-dark">
             El dueño que hace de todo
           </h2>
@@ -166,9 +163,8 @@ export default function PersonasPage() {
       </section>
 
       {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
-      <section className="section bg-r-white">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">Cómo saber si es tu problema</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Señales de que Personas es tu palanca bloqueada
           </h2>
@@ -191,9 +187,8 @@ export default function PersonasPage() {
       </section>
 
       {/* ── QUÉ CAMBIA ────────────────────────────────────────────────────── */}
-      <section className="section bg-r-warm">
+      <section className="section bg-r-cream">
         <div className="container-content">
-          <p className="label-tag mb-4">El otro lado</p>
           <h2 className="font-display text-display-md text-r-dark mb-8">
             Qué cambia cuando Personas funciona bien
           </h2>
@@ -215,7 +210,7 @@ export default function PersonasPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
-      <section className="section bg-r-green">
+      <section className="section-sm bg-r-green">
         <div className="container-content">
           <p className="label-tag mb-4 text-r-warm/50">El siguiente paso</p>
           <h2 className="font-display text-display-md text-r-white mb-4">
