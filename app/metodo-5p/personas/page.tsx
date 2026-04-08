@@ -162,50 +162,50 @@ export default function PersonasPage() {
         </div>
       </section>
 
-      {/* ── SEÑALES ───────────────────────────────────────────────────────── */}
+      {/* ── SEÑALES Y QUÉ CAMBIA ─────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <h2 className="font-display text-display-md text-r-dark mb-8">
-            Señales de que Personas es tu palanca bloqueada
-          </h2>
-          <ul className="space-y-4">
-            {[
-              "Cuando no estás, las cosas se paran o se hacen mal.",
-              "Tu equipo te pregunta cosas que debería poder resolver solo.",
-              "Has contratado a alguien que no funciona bien pero no sabes cómo abordar la situación.",
-              "Tienes la sensación de que trabajas más horas que cualquiera de tu equipo y ganas lo mismo o menos.",
-              "No tienes claro quién hace qué en tu empresa. Y tu equipo tampoco.",
-              "Las personas buenas se van y las que se quedan no siempre son las más productivas.",
-            ].map((señal) => (
-              <li key={señal} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-r-green" />
-                <span className="text-r-dark/85">{señal}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* ── QUÉ CAMBIA ────────────────────────────────────────────────────── */}
-      <section className="section bg-r-cream">
-        <div className="container-content">
-          <h2 className="font-display text-display-md text-r-dark mb-8">
-            Qué cambia cuando Personas funciona bien
-          </h2>
-          <ul className="space-y-4">
-            {[
-              "El dueño tiene tiempo para hacer lo que solo él puede hacer: decidir, vender, diseñar la estrategia.",
-              "El equipo funciona sin necesitar supervisión constante porque los roles y expectativas están claros.",
-              "Las tareas operativas se hacen bien y a tiempo sin que el dueño tenga que estar encima.",
-              "Contratar deja de ser un parche de urgencia y se convierte en una decisión con criterio.",
-              "El coste de personal tiene sentido porque cada persona genera un retorno medible.",
-            ].map((cambio) => (
-              <li key={cambio} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-r-green" />
-                <span className="text-r-dark/85">{cambio}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="grid gap-12 md:grid-cols-2">
+            <div>
+              <h2 className="font-display text-display-md text-r-dark mb-8">
+                Señales de que Personas es tu palanca bloqueada
+              </h2>
+              <ul className="space-y-4">
+                {[
+                  "Cuando no estás, las cosas se paran o se hacen mal.",
+                  "Tu equipo te pregunta cosas que debería poder resolver solo.",
+                  "Has contratado a alguien que no funciona bien pero no sabes cómo abordar la situación.",
+                  "Tienes la sensación de que trabajas más horas que cualquiera de tu equipo y ganas lo mismo o menos.",
+                  "No tienes claro quién hace qué en tu empresa. Y tu equipo tampoco.",
+                  "Las personas buenas se van y las que se quedan no siempre son las más productivas.",
+                ].map((señal) => (
+                  <li key={señal} className="flex items-start gap-3">
+                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-r-green" />
+                    <span className="text-r-dark/85">{señal}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h2 className="font-display text-display-md text-r-dark mb-8">
+                Qué cambia cuando funciona bien
+              </h2>
+              <ul className="space-y-4">
+                {[
+                  "El dueño tiene tiempo para hacer lo que solo él puede hacer: decidir, vender, diseñar la estrategia.",
+                  "El equipo funciona sin necesitar supervisión constante porque los roles y expectativas están claros.",
+                  "Las tareas operativas se hacen bien y a tiempo sin que el dueño tenga que estar encima.",
+                  "Contratar deja de ser un parche de urgencia y se convierte en una decisión con criterio.",
+                  "El coste de personal tiene sentido porque cada persona genera un retorno medible.",
+                ].map((cambio) => (
+                  <li key={cambio} className="flex items-start gap-3">
+                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-r-green" />
+                    <span className="text-r-dark/85">{cambio}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -216,7 +216,7 @@ export default function PersonasPage() {
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si Personas es tu cuello de botella, hay que empezar por ahí
           </h2>
-          <p className="text-r-warm/70 mb-8 text-lg leading-relaxed">
+          <p className="text-r-warm/70 mb-8 leading-relaxed">
             El diagnóstico te ayuda a identificar si Personas es tu palanca
             más limitante ahora mismo, antes de tocar nada más.
           </p>

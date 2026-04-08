@@ -192,7 +192,7 @@ export default function HomePage() {
       </section>
 
       {/* ── MÉTODO 5P ──────────────────────────────────────────────────────── */}
-      <section className="section bg-r-dark">
+      <section className="section bg-r-green">
         <div className="container-content">
           <div className="grid gap-12 md:grid-cols-2 md:items-end md:gap-16">
             <div>
@@ -216,7 +216,7 @@ export default function HomePage() {
                 <Link
                   key={p.href}
                   href={p.href}
-                  className="group flex items-center gap-5 bg-r-dark px-6 py-4 no-underline transition-colors hover:bg-r-green"
+                  className="group flex items-center gap-5 bg-r-dark px-6 py-4 no-underline transition-colors hover:bg-r-green-2"
                 >
                   <span className="font-body w-7 shrink-0 text-xs font-semibold tracking-widest text-r-warm/35 group-hover:text-r-warm/50">
                     {p.num}
@@ -314,27 +314,29 @@ export default function HomePage() {
               {
                 name: "Plataforma de consultoría",
                 url: "rentabilismo.com",
+                href: "/plataforma",
                 desc: "Diagnósticos guiados, herramientas y acompañamiento online para aplicar el sistema a tu negocio concreto.",
               },
               {
                 name: "Blog de contenidos",
                 url: "focorentabilismo.com",
+                href: "/blog-recursos",
                 desc: "Artículos prácticos, análisis y recursos para empresarios que quieren seguir aprendiendo.",
               },
               {
                 name: "Consultoría presencial",
                 url: "consultoriametodo.es",
+                href: "/consultoria",
                 desc: "Trabajo directo con empresarios en A Coruña y por remoto para quienes prefieren acompañamiento cercano.",
               },
             ].map((item) => (
-              <div key={item.name} className="border border-r-border p-6">
+              <Link key={item.name} href={item.href} className="block border border-r-border p-6 no-underline transition-colors hover:border-r-green hover:bg-r-white">
                 <p className="text-xs font-semibold tracking-widest text-r-muted/50 uppercase">
                   {item.url}
                 </p>
                 <p className="mt-2 font-semibold text-r-dark">{item.name}</p>
                 <p className="mt-2 text-sm leading-relaxed text-r-muted">{item.desc}</p>
-                <p className="mt-4 text-xs text-r-muted/40">Próximamente disponible</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

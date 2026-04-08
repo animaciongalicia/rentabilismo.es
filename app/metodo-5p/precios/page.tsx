@@ -229,7 +229,7 @@ export default function PreciosPage() {
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si tus precios no generan margen real, hay que revisarlos ya
           </h2>
-          <p className="text-r-warm/70 mb-8 text-lg leading-relaxed">
+          <p className="text-r-warm/70 mb-8 leading-relaxed">
             El diagnóstico identifica si Precios es la palanca que está
             limitando tu rentabilidad ahora mismo y por dónde empezar a corregirlo.
           </p>

@@ -193,7 +193,7 @@ export default function ProductoServicioPage() {
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si tu oferta no está clara, todo lo demás cuesta más
           </h2>
-          <p className="text-r-warm/70 mb-8 text-lg leading-relaxed">
+          <p className="text-r-warm/70 mb-8 leading-relaxed">
             El diagnóstico identifica si Producto/Servicio es la palanca que
             está limitando tu rentabilidad ahora mismo.
           </p>

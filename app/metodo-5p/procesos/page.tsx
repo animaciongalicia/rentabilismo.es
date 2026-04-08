@@ -230,7 +230,7 @@ export default function ProcesosPage() {
           <h2 className="font-display text-display-md text-r-white mb-4">
             Si tu negocio depende de que estés tú, Procesos es tu palanca
           </h2>
-          <p className="text-r-warm/70 mb-8 text-lg leading-relaxed">
+          <p className="text-r-warm/70 mb-8 leading-relaxed">
             El diagnóstico identifica si Procesos es lo que está limitando
             tu rentabilidad y qué procesos hay que atacar primero.
           </p>

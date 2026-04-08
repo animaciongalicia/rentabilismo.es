@@ -235,7 +235,7 @@ export default function PromocionPublicidadPage() {
           <h2 className="font-display text-display-md text-r-white mb-4">
             Antes de invertir en Promoción, comprueba que el resto funciona
           </h2>
-          <p className="text-r-warm/70 mb-8 text-lg leading-relaxed">
+          <p className="text-r-warm/70 mb-8 leading-relaxed">
             El diagnóstico identifica cuál de las cinco palancas está limitando
             la rentabilidad de tu negocio ahora mismo. Si es Promoción, bien.
             Si es otra, mejor saberlo antes de gastar en publicidad.

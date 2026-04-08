@@ -162,7 +162,7 @@ export default function FilosofiaPage() {
                 <span className="font-body text-sm font-semibold tracking-widest text-r-muted/40">
                   {p.num} / 05
                 </span>
-                <p className="mt-3 font-display text-[5.5rem] font-bold leading-none text-r-green/15">
+                <p className="mt-3 font-display text-[2.5rem] font-bold leading-none text-r-green/20">
                   {p.num.replace("0", "")}
                 </p>
               </div>
