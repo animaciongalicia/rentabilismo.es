@@ -346,7 +346,7 @@ export default function HomePage() {
       <section className="section bg-r-green">
         <div className="container-content">
           <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-xl">
+            <div className="max-w-2xl">
               <p className="label-tag mb-4 text-r-warm/50">Sin atajos</p>
               <h2 className="font-display text-display-lg text-r-white">
                 La rentabilidad no es suerte.<br />Es el resultado de un sistema.
