@@ -34,7 +34,7 @@ export default function ProductoServicioPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Producto / Servicio
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Lo que vendes tiene que estar claro, bien entregado y generar margen.
           </p>
         </div>

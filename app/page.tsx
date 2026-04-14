@@ -90,7 +90,7 @@ export default function HomePage() {
             <h1 className="font-display text-display-xl text-r-white">
               Trabajas duro.<br />Tu negocio merece funcionar mejor.
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
               Rentabilismo es el sistema para construir negocios realmente
               rentables. Sin teorías vacías, sin promesas de gurú. Con un método
               claro y lenguaje directo para empresarios que necesitan resultados

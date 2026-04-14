@@ -34,7 +34,7 @@ export default function PromocionPublicidadPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Promoción / Publicidad
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Antes de invertir en darte a conocer, asegúrate de que lo que
             vas a dar a conocer merece la pena.
           </p>

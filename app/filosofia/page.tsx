@@ -104,7 +104,7 @@ export default function FilosofiaPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Filosofía<br />Rentabilista
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Cinco principios. No son valores para colgar en la pared. Son
             formas concretas de entender y operar un negocio.
           </p>

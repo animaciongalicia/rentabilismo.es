@@ -34,7 +34,7 @@ export default function PreciosPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Precios
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             El precio correcto no es el más bajo. Es el que cubre tus costes
             reales y refleja el valor que entregas.
           </p>

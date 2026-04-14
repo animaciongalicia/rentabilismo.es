@@ -78,7 +78,7 @@ export default function ManifiestoPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Manifiesto<br />Rentabilista
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Esto no es motivación. No hay metáforas de vuelos ni referencias
             al éxito de otros. Es una declaración de lo que creemos sobre los
             negocios, el trabajo y la rentabilidad.
@@ -88,7 +88,7 @@ export default function ManifiestoPage() {
 
       {/* ── INTRO ─────────────────────────────────────────────────────────── */}
       <section className="section-sm bg-r-cream">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="text-lg leading-relaxed text-r-dark">
             Creemos en los negocios reales. No en los ideales de las
             presentaciones de inversión. En los negocios con nóminas que pagar,
@@ -136,7 +136,7 @@ export default function ManifiestoPage() {
 
       {/* ── CIERRE ────────────────────────────────────────────────────────── */}
       <section className="section bg-r-green">
-        <div className="container-prose">
+        <div className="container-content">
           <p className="font-display text-display-md text-r-white">
             Esto no es teoría. Es lo que aplicamos, enseñamos y medimos.
           </p>

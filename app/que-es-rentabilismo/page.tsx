@@ -57,7 +57,7 @@ export default function QueEsRentabilismoPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Qué es Rentabilismo
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             No es un gurú, no es una academia y no es otro curso más.
             Es un sistema para pensar los negocios de forma más clara,
             más ordenada y más rentable.

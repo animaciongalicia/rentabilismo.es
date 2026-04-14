@@ -34,7 +34,7 @@ export default function ProcesosPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Procesos
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Un negocio que solo funciona cuando tú estás encima no está
             construido. Está improvisado.
           </p>

@@ -94,7 +94,7 @@ export default function ParaQuienEsPage() {
           <h1 className="font-display text-display-xl text-r-white">
             ¿Es Rentabilismo<br />para ti?
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             No está diseñado para todos. Pero si te identificas con alguno
             de estos tres perfiles, estás en el lugar correcto.
           </p>

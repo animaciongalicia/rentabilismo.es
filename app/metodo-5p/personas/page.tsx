@@ -34,7 +34,7 @@ export default function PersonasPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Personas
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Las personas correctas en el papel correcto. Empezando por ti.
           </p>
         </div>
