@@ -29,7 +29,7 @@ const config: Config = {
       },
       fontSize: {
         // Escala tipográfica editorial
-        "display-xl": ["clamp(2rem,   3.2vw, 2.75rem)",  { lineHeight: "1.15", letterSpacing: "-0.02em"  }],
+        "display-xl": ["clamp(1.6rem, 3.5vw, 2.75rem)",  { lineHeight: "1.15", letterSpacing: "-0.02em"  }],
         "display-lg": ["clamp(1.75rem,2.6vw, 2.25rem)",  { lineHeight: "1.18", letterSpacing: "-0.015em" }],
         "display-md": ["clamp(1.3rem, 1.8vw, 1.75rem)",  { lineHeight: "1.25", letterSpacing: "-0.01em"  }],
         "display-sm": ["clamp(1.1rem, 1.3vw, 1.25rem)",  { lineHeight: "1.3",  letterSpacing: "-0.005em" }],
