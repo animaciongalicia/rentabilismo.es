@@ -125,30 +125,60 @@ export default function HerramientasPage() {
       <section className="section bg-r-cream">
         <div className="container-content">
           <p className="label-tag mb-4">El ecosistema completo</p>
-          <h2 className="font-display text-display-md text-r-dark mb-2">
-            Para ir más lejos
+          <h2 className="font-display text-display-md text-r-dark mb-4">
+            Del diagnóstico a la transformación
           </h2>
-          <p className="text-r-muted mb-10">
-            Las herramientas gratuitas son el punto de entrada. El ecosistema
-            incluye plataforma guiada, contenidos de fondo y consultoría directa.
-          </p>
-          <div className="space-y-3">
+          <div className="max-w-2xl space-y-3 text-r-dark/80 mb-10">
+            <p>
+              Las herramientas gratuitas hacen el diagnóstico: identifican qué
+              palanca está fallando, quién es tu cliente ideal o si una idea
+              tiene viabilidad real. Pero diagnosticar no es suficiente.
+            </p>
+            <p>
+              El trabajo real empieza después: aplicar el sistema con tus
+              números concretos, tomar decisiones con criterio y mantener el
+              rumbo cuando el día a día presiona. Para eso existe el resto del
+              ecosistema Rentabilismo.
+            </p>
+          </div>
+          <div className="space-y-4">
             {[
-              { label: "Plataforma SaaS",      sub: "rentabilismo.com",     href: "/plataforma",    desc: "Aplica el Método 5P con módulos guiados y seguimiento real." },
-              { label: "Blog y contenidos",    sub: "focorentabilismo.com", href: "/blog-recursos", desc: "Artículos y casos prácticos sobre rentabilidad empresarial." },
-              { label: "Consultoría presencial", sub: "consultoriametodo.es", href: "/consultoria",   desc: "Trabajo directo en A Coruña. Con tus números reales." },
+              {
+                label:    "Plataforma SaaS",
+                sub:      "rentabilismo.com",
+                href:     "/plataforma",
+                para:     "Para el empresario que quiere estructura y acompañamiento sin consultor presencial.",
+                desc:     "Aplica el Método 5P con módulos guiados, seguimiento de tus métricas reales y recursos específicos para cada palanca. Avanza a tu ritmo, con el sistema completo.",
+              },
+              {
+                label:    "Blog y contenidos",
+                sub:      "focorentabilismo.com",
+                href:     "/blog-recursos",
+                para:     "Para quien quiere seguir aprendiendo o necesita referencia sobre un tema concreto.",
+                desc:     "Artículos de fondo, análisis de casos y recursos prácticos sobre rentabilidad empresarial. Sin motivación vacía ni teoría desconectada del negocio real.",
+              },
+              {
+                label:    "Consultoría presencial",
+                sub:      "consultoriametodo.es",
+                href:     "/consultoria",
+                para:     "Para quien prefiere acompañamiento directo y quiere resultados en el menor tiempo.",
+                desc:     "Trabajo con tu negocio: tus números, tu equipo, tus decisiones. Presencial en A Coruña o por remoto. Sin metodología genérica ni diagnósticos de manual.",
+              },
             ].map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex items-center justify-between gap-4 border border-r-border p-4 no-underline hover:border-r-green transition-colors group"
+                className="group flex items-start justify-between gap-6 border border-r-border p-6 no-underline transition-colors hover:border-r-green"
               >
-                <div>
-                  <p className="font-medium text-r-dark group-hover:text-r-green transition-colors">{item.label}</p>
-                  <p className="text-xs text-r-green mt-0.5">{item.sub}</p>
-                  <p className="text-xs text-r-muted mt-1">{item.desc}</p>
+                <div className="flex-1">
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <p className="font-semibold text-r-dark group-hover:text-r-green transition-colors">{item.label}</p>
+                    <p className="text-xs text-r-green">{item.sub}</p>
+                  </div>
+                  <p className="text-xs font-medium text-r-muted mb-2">{item.para}</p>
+                  <p className="text-sm text-r-dark/70 leading-relaxed">{item.desc}</p>
                 </div>
-                <span className="shrink-0 text-r-muted/40 group-hover:text-r-green transition-colors">→</span>
+                <span className="shrink-0 mt-1 text-r-muted/40 group-hover:text-r-green transition-colors">→</span>
               </Link>
             ))}
           </div>
