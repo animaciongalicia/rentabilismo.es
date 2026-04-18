@@ -92,7 +92,7 @@ export default function ParaQuienEsPage() {
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Los perfiles</p>
           <h1 className="font-display text-display-xl text-r-white">
-            ¿Es Rentabilismo<br />para ti?
+            ¿Es Rentabilismo para ti?
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             No está diseñado para todos. Pero si te identificas con alguno

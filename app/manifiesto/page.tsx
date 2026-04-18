@@ -76,7 +76,7 @@ export default function ManifiestoPage() {
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Declaración de principios</p>
           <h1 className="font-display text-display-xl text-r-white">
-            Manifiesto<br />Rentabilista
+            Manifiesto Rentabilista
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Esto no es motivación. No hay metáforas de vuelos ni referencias

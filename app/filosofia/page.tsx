@@ -102,7 +102,7 @@ export default function FilosofiaPage() {
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Los principios del sistema</p>
           <h1 className="font-display text-display-xl text-r-white">
-            Filosofía<br />Rentabilista
+            Filosofía Rentabilista
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Cinco principios. No son valores para colgar en la pared. Son

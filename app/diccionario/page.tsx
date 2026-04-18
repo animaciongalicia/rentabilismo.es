@@ -99,7 +99,7 @@ export default function DiccionarioPage() {
         <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Vocabulario propio</p>
           <h1 className="font-display text-display-xl text-r-white">
-            Diccionario<br />Rentabilista
+            Diccionario Rentabilista
           </h1>
           <p className="mt-4 text-base leading-relaxed text-r-warm/70">
             Para pensar con claridad hay que hablar con precisión. Cuando los
