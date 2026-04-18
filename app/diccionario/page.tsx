@@ -101,7 +101,7 @@ export default function DiccionarioPage() {
           <h1 className="font-display text-display-xl text-r-white">
             Diccionario Rentabilista
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Para pensar con claridad hay que hablar con precisión. Cuando los
             conceptos son vagos, las decisiones también lo son.
           </p>
