@@ -82,7 +82,7 @@ export default function HomePage() {
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-16 md:py-24 lg:py-28">
-        <div className="container-wide">
+        <div className="container-site">
 
             <p className="label-tag mb-6 text-r-warm/50">
               Sistema · Método · Criterio

@@ -69,7 +69,7 @@ export default function Metodo5PPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-12 sm:py-16 md:py-20">
-        <div className="container-wide">
+        <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">El corazón del sistema</p>
           <h1 className="font-display text-display-xl text-r-white">
             El Método 5P

@@ -89,7 +89,7 @@ export default function ParaQuienEsPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-12 sm:py-16 md:py-20">
-        <div className="container-wide">
+        <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Los perfiles</p>
           <h1 className="font-display text-display-xl text-r-white">
             ¿Es Rentabilismo<br />para ti?
