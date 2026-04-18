@@ -235,7 +235,7 @@ export default function HomePage() {
       {/* ── FILOSOFÍA / PILARES ────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <div className="grid gap-10 md:grid-cols-[280px_1fr] md:gap-16 lg:gap-20">
+          <div className="grid gap-10 md:grid-cols-[280px_1fr] md:gap-16 lg:grid-cols-[360px_1fr] lg:gap-20">
             <div>
               <p className="label-tag mb-3">La filosofía</p>
               <h2 className="font-display text-display-lg text-r-dark">
