@@ -50,12 +50,12 @@ export default function HerramientasPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-12 sm:py-16 md:py-20">
-        <div className="container-content">
+        <div className="container-site">
           <p className="label-tag mb-4 text-r-warm/50">Ecosistema Rentabilismo · Gratis</p>
           <h1 className="font-display text-display-xl text-r-white">
             Tres herramientas para diagnosticar, conocer a tu cliente y validar ideas
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-r-warm/70">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-r-warm/70">
             Basadas en el Método 5P. Sin registro complicado. Resultado inmediato.
           </p>
         </div>
@@ -64,59 +64,57 @@ export default function HerramientasPage() {
       {/* ── LAS 3 HERRAMIENTAS ────────────────────────────────────────────── */}
       <section className="section bg-r-cream">
         <div className="container-content">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="space-y-6">
             {TOOLS.map((tool) => (
-              <div key={tool.num} className="card-accent flex flex-col gap-5">
+              <div key={tool.num} className="card-accent">
+                <div className="grid gap-8 md:grid-cols-[260px_1fr] md:gap-12">
 
-                {/* cabecera */}
-                <div className="flex items-start justify-between gap-2">
-                  <span className="text-xs font-semibold tracking-widest text-r-muted/50">{tool.num}</span>
-                  <span className="label-tag text-r-green">{tool.tag}</span>
+                  {/* Columna izquierda — identidad */}
+                  <div>
+                    <div className="flex items-start justify-between gap-2 mb-4">
+                      <span className="text-xs font-semibold tracking-widest text-r-muted/50">{tool.num}</span>
+                      <span className="label-tag text-r-green">{tool.tag}</span>
+                    </div>
+                    <h2 className="font-display text-display-sm text-r-dark">
+                      {tool.name}
+                    </h2>
+                    <p className="mt-4 border-l-2 border-r-lime pl-3 text-sm italic text-r-muted leading-relaxed">
+                      &ldquo;{tool.pain}&rdquo;
+                    </p>
+                  </div>
+
+                  {/* Columna derecha — contenido */}
+                  <div className="flex flex-col gap-4">
+                    <p className="text-sm text-r-dark/80 leading-relaxed">
+                      {tool.que}
+                    </p>
+                    <ul className="space-y-1.5">
+                      {tool.obtienes.map((o) => (
+                        <li key={o} className="flex items-start gap-2 text-xs text-r-dark/70">
+                          <span className="mt-[3px] h-1.5 w-1.5 shrink-0 rounded-full bg-r-lime" />
+                          {o}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-auto flex flex-wrap items-center gap-4 pt-2">
+                      <a
+                        href={tool.externalHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-r-green px-5 py-2.5 text-sm font-semibold text-r-white no-underline hover:bg-r-green-2 transition-colors"
+                      >
+                        Acceder a {tool.domain} ↗
+                      </a>
+                      <Link
+                        href={tool.href}
+                        className="text-sm text-r-muted no-underline hover:text-r-dark transition-colors"
+                      >
+                        Cómo funciona →
+                      </Link>
+                    </div>
+                  </div>
+
                 </div>
-
-                {/* nombre */}
-                <h2 className="font-display text-display-sm text-r-dark">
-                  {tool.name}
-                </h2>
-
-                {/* dolor */}
-                <p className="border-l-2 border-r-lime pl-3 text-sm italic text-r-muted leading-relaxed">
-                  &ldquo;{tool.pain}&rdquo;
-                </p>
-
-                {/* qué es */}
-                <p className="text-sm text-r-dark/80 leading-relaxed">
-                  {tool.que}
-                </p>
-
-                {/* obtienes */}
-                <ul className="space-y-1.5">
-                  {tool.obtienes.map((o) => (
-                    <li key={o} className="flex items-start gap-2 text-xs text-r-dark/70">
-                      <span className="mt-[3px] h-1.5 w-1.5 shrink-0 rounded-full bg-r-lime" />
-                      {o}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* CTAs */}
-                <div className="mt-auto flex flex-col gap-2.5 pt-2">
-                  <a
-                    href={tool.externalHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 bg-r-green px-5 py-2.5 text-sm font-semibold text-r-white no-underline hover:bg-r-green-2 transition-colors"
-                  >
-                    Acceder a {tool.domain} ↗
-                  </a>
-                  <Link
-                    href={tool.href}
-                    className="text-center text-xs text-r-muted no-underline hover:text-r-dark transition-colors"
-                  >
-                    Cómo funciona →
-                  </Link>
-                </div>
-
               </div>
             ))}
           </div>
