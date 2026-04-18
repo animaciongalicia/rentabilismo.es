@@ -200,27 +200,29 @@ export default function EmpiezaAquiPage() {
               {
                 nombre: "Plataforma de consultoría",
                 url: "rentabilismo.com",
+                href: "/plataforma",
                 desc: "Diagnósticos guiados, herramientas y acompañamiento online.",
               },
               {
                 nombre: "Blog de contenidos",
                 url: "focorentabilismo.com",
+                href: "/blog-recursos",
                 desc: "Artículos prácticos y recursos para seguir aprendiendo.",
               },
               {
                 nombre: "Consultoría presencial",
                 url: "consultoriametodo.es",
+                href: "/consultoria",
                 desc: "Trabajo directo con empresarios en A Coruña y por remoto.",
               },
             ].map((item) => (
-              <div key={item.nombre} className="border border-r-border-d p-6">
+              <Link key={item.nombre} href={item.href} className="block border border-r-border-d p-6 no-underline transition-colors hover:border-r-lime hover:bg-r-dark">
                 <p className="text-xs font-semibold uppercase tracking-widest text-r-warm/35">
                   {item.url}
                 </p>
                 <p className="mt-2 font-semibold text-r-white">{item.nombre}</p>
                 <p className="mt-2 text-sm leading-relaxed text-r-warm/55">{item.desc}</p>
-                <p className="mt-4 text-xs text-r-warm/25">Próximamente →</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
