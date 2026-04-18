@@ -24,7 +24,7 @@ export default function PreciosPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="bg-r-green py-12 sm:py-16 md:py-20">
-        <div className="container-content">
+        <div className="container-site">
           <Breadcrumb items={[
             { label: "Inicio", href: "/" },
             { label: "Método 5P", href: "/metodo-5p" },
