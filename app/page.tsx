@@ -114,7 +114,7 @@ export default function HomePage() {
             <div>
               <p className="label-tag mb-3">El problema</p>
               <h2 className="font-display text-display-lg text-r-dark">
-                Muchos negocios facturan.<br />Pocos rentabilizan.
+                Muchos negocios facturan. Pocos rentabilizan.
               </h2>
             </div>
             <div className="space-y-5 text-[1.0625rem] leading-relaxed text-r-dark/80">
